@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/undying_soul
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://TheRealCWhitton.github.io
+  * I am undying_soul (https://keybase.io/undying_soul) on keybase.
+  * I have a public key ASB95GZL4xuuC6V5TcmZQWriy-knE8DOdxvy0e1EUfNEpgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207de4664be31bae0ba5794dc999416ae2cbe92713c0ce771bf2d1ed4451f344a60a",
+      "host": "keybase.io",
+      "kid": "01207de4664be31bae0ba5794dc999416ae2cbe92713c0ce771bf2d1ed4451f344a60a",
+      "uid": "47ff267c6be45e38431978d1bb711519",
+      "username": "undying_soul"
+    },
+    "merkle_root": {
+      "ctime": 1584889329,
+      "hash": "1a12209c6d508a9d3bf19c7abbe2c5a7983afbbd09c614c4f39ab4d7d2d43d9104acc8ca9d2fc2ed59573746780fca510207472e5766356035958eceb0aed8ee",
+      "hash_meta": "46d99f5c37d0ab5987c54319851b9a52a3d9da57d31d22e6f649b67ab1e4656e",
+      "seqno": 15540332
+    },
+    "service": {
+      "entropy": "ioqqdbEJCTQBZfBz86HfOUUD",
+      "hostname": "TheRealCWhitton.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.3.0"
+  },
+  "ctime": 1584889341,
+  "expire_in": 504576000,
+  "prev": "7148ac791d180f96bf64a2116a8a94805d7f5168228037785c75d1ac445ad61a",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgfeRmS+MbrguleU3JmUFq4svpJxPAzncb8tHtRFHzRKYKp3BheWxvYWTESpcCB8QgcUiseR0YD5a/ZKIRaoqUgF1/UWgigDd4XHXRrERa1hrEIAv/BY0rTzBSxOKDYgAnUY/cTJp+Qv6CyRaoX/rKqMFSAgHCo3NpZ8RAUESKJO9/oA9hm2CfNz6Dm1fOS4NegJbnZRHvyY2GxA1WxpCG2f4B/GtAvUFdAbk7fexbE1Lyo6Flr2CHnhtIDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOf9JjbjLxMI0UztavlDHYG49ucr7nvwsEwCCstuz+8jo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/undying_soul
+
+==================================================================
