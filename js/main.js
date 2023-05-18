@@ -45,3 +45,13 @@ function copyText() {
   /* Alert the copied text */
   alert("Copied the text: " + copyText.value);
 }
+
+var delayInMilliseconds = 1000; // half a second
+
+setTimeout(function() { 
+
+   var iframe = document.getElementsByTagName('iframe')[0];
+   iframe.style.background = 'blue';
+   iframe.contentWindow.document.body.style.backgroundColor = 'blue';
+
+}, delayInMilliseconds);
