@@ -11,6 +11,8 @@
     crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/tabs.css">
   <title>Corbin Whitton | Hobbies</title>
 </head>
 
@@ -56,69 +58,303 @@
     </nav>
   </header>
 
-  <main id="work">
+  <main id="hobbies">
     <h1 class="lg-heading">
       My
       <span class="text-secondary">Hobbies</span>
     </h1>
-    <h2 class="sm-heading" style="margin-bottom: 10px;">
-      Auditory Media
-    </h2>
-    
-    <div width="100%">
-      <div class="item" width="100%" style="margin-left:50px">
-        <table width="100%">
-          <tr width="100%"">
-            <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6HdDNKosXUXkxfNWFH7xNk?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7znyjc8B1wuy4YO122gSvX?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-            <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6V7rZwMN71VNAu6MKvDl4m?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    
-    <h2 class="sm-heading" style="margin-bottom: 10px;">
-      Visual Media
-    </h2>
-    
-    <div class="projects">
-      <div class="item">
-        <a href="https://nnu.whdl.org/en/browse/resources/13543">
-          <img src="https://visitnampa.org/media/cqsnol21/northwest-nazarene-university-riley-library-2.jpg" width="1920" height="213" alt="Using Docker in an Educational Environment">
-        </a>
-        <a href="https://nnu.whdl.org/en/browse/resources/13543" class="btn-dark">
-          <i class="fa fa-book"></i> Using Docker in an Educational Environment
-        </a>
-      </div>
-    </div>
-    
-    <h2 class="sm-heading" style="margin-bottom: 10px;">
-      Writing and Publications
-    </h2>
-    
-    <div class="projects">
-      <div class="item">
-        <a href="https://nnu.whdl.org/en/browse/resources/13543">
-          <img src="https://visitnampa.org/media/cqsnol21/northwest-nazarene-university-riley-library-2.jpg" width="1920" height="213" alt="Using Docker in an Educational Environment">
-        </a>
-        <a href="https://nnu.whdl.org/en/browse/resources/13543" class="btn-dark">
-          <i class="fa fa-book"></i> Using Docker in an Educational Environment
-        </a>
-      </div>
+
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Sound Engineering')" id="defaultOpen">Sound Engineering</button>
+      <button class="tablinks" onclick="openTab(event, 'Photography')">Photography</button>
+      <button class="tablinks" onclick="openTab(event, 'Writing')">Writing</button>
+      <button class="tablinks" onclick="openTab(event, 'Adventures')">Adventures</button>
     </div>
 
-    <h2 class="sm-heading" style="margin-bottom: 10px;">
-      Activities
-    </h2>
-    
-    <div class="projects">
-      <div class="item">
-        <a href="https://nnu.whdl.org/en/browse/resources/13543">
-          <img src="https://visitnampa.org/media/cqsnol21/northwest-nazarene-university-riley-library-2.jpg" width="1920" height="213" alt="Using Docker in an Educational Environment">
-        </a>
-        <a href="https://nnu.whdl.org/en/browse/resources/13543" class="btn-dark">
-          <i class="fa fa-book"></i> Using Docker in an Educational Environment
-        </a>
+    <!-- Tab content -->
+    <div id="Sound Engineering" class="tabcontent">
+      <div width="100%" height>
+        <div class="item" width="100%">
+          <table width="100%">
+            <tr width="100%"">
+              <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6HdDNKosXUXkxfNWFH7xNk?utm_source=generator&theme=0" width="100%" height="800em" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+              <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7znyjc8B1wuy4YO122gSvX?utm_source=generator&theme=0" width="100%" height="800em" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+              <td><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6V7rZwMN71VNAu6MKvDl4m?utm_source=generator&theme=0" width="100%" height="800em" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="Photography" class="tabcontent">
+      <div>
+        <div class="gallery">
+          <a target="_blank">
+              <img src="img/gallery/photos/1.jpeg" alt="Barbed wire sunset" width="600" height="400">
+          </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/2.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/3.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/4.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/5.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/6.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/7.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/8.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/9.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/10.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/11.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/12.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/13.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/14.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/15.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/16.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/17.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/18.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/19.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/20.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/21.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/22.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/23.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/24.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/25.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/26.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/27.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/28.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/29.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/30.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/31.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/32.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/33.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/34.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/35.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/36.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/37.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/38.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/39.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/40.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/41.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/42.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/43.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/44.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/45.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/46.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/47.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank">
+                <img src="img/gallery/photos/48.jpeg" alt="Barbed wire sunset" width="600" height="400">
+            </a>
+        </div>
+      </div>
+    </div>
+    <div id="Writing" class="tabcontent">
+      <h3>Writing</h3>
+      <div class="projects">
+        <div class="item">
+          <a href="https://nnu.whdl.org/en/browse/resources/13543">
+            <img src="https://visitnampa.org/media/cqsnol21/northwest-nazarene-university-riley-library-2.jpg" width="1920" height="213" alt="Using Docker in an Educational Environment">
+          </a>
+          <a href="https://nnu.whdl.org/en/browse/resources/13543" class="btn-dark">
+            <i class="fa fa-book"></i> Using Docker in an Educational Environment
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="Adventures" class="tabcontent">
+      <h3>Adventures</h3>
+      <div class="projects">
+        <div class="item">
+          <a href="https://nnu.whdl.org/en/browse/resources/13543">
+            <img src="https://visitnampa.org/media/cqsnol21/northwest-nazarene-university-riley-library-2.jpg" width="1920" height="213" alt="Using Docker in an Educational Environment">
+          </a>
+          <a href="https://nnu.whdl.org/en/browse/resources/13543" class="btn-dark">
+            <i class="fa fa-book"></i> Using Docker in an Educational Environment
+          </a>
+        </div>
       </div>
     </div>
   </main>
@@ -131,8 +367,10 @@
     <br>
     Utilizes: <i class="fab fa-html5" title="HTML 5"></i> <i class="fab fa-css3-alt" title="CSS 3"></i> <i class="fab fa-js" title="JavaScript"></i>
   </footer>
-
+  
   <script src="js/main.js"></script>
+  <script src="js/tabs.js"></script>
+  <script>document.getElementById("defaultOpen").click();</script>
 </body>
 
 </html>
