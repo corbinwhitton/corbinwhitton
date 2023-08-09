@@ -39,6 +39,8 @@
     --input-text-color: #000000;
     --input-placeholder-color:rgb(85, 85, 85);
     --input-background-color: #ffffff;
+    --modal-background: #ffffff;
+    --modal-border-color: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
