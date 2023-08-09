@@ -34,6 +34,7 @@
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js" crossorigin="anonymous"></script>
     <script src="js/nav.js"></script>
     <script src="js/cal.js"></script>
+    <script src="js/theme.js"></script>
 </head>
 
 <body>
@@ -54,19 +55,19 @@
                     <a class="nav-link nav-custom-link" href="index.html#home">Home</a>
                 </li>
                 <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#about-me">About</a>
+                    <a class="nav-link nav-custom-link" href="index.html#about-me">About</a>
                 </li>
                 <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#experiences">Experiences</a>
+                    <a class="nav-link nav-custom-link" href="index.html#experiences">Experiences</a>
                 </li>
                 <!-- <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link nav-custom-link" href="index.html#portfolio">Portfolio</a>
                 </li> -->
                 <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#projects">Projects</a>
+                    <a class="nav-link nav-custom-link" href="index.html#projects">Projects</a>
                 </li>
                 <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#contact">Contact</a>
+                    <a class="nav-link nav-custom-link" href="index.html#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -74,181 +75,191 @@
     <!-- Navbar End -->
 
     <main class="container-fluid main p-0" id="home">
-        <!-- SECTION NO 1 -->
-        <section class="container-fluid section-1">
-            <div class="row section-1-inner">
-                <div class="col section-1-inner-col">
-                    <div class="image-frame mx-auto my-5">
+        <!-- SECTION NO 5 -->
+        <section id="portfolio" class="container-fluid section-5">
+            <div class="row">
+                <div class="col">
+                    <div class="section-5-text text-center mx-auto">
+                        // TODO
+                    </div>
+                    <div class="section-5-icon text-center">
+                        <i class="bi bi-chevron-double-down sec5-icon"></i>
                     </div>
                 </div>
             </div>
-        </section>
-
-
-        <!-- SECTION NO 2 -->
-        <section id="about-me" class="container-fluid section-2">
             <div class="row">
                 <div class="col text-center">
-                    <div class="primary-heading">
-                        About <span class="fw-bold primary-heading-bold">Corbin Whitton</span>
-                    </div>
-                    <div class="paragraph mx-auto mt-2">
-                        DevOps Engineer | Full-Stack Software Engineer | Computer Scientist | IT Professional<br>
-                        I design, implement, and support solutions designed with non-profits in mind. I utilize technology to its fullest capabilities, developing solutions that are highly available, cost effective, and easy to understand.
-                    </div>
-                    <a type="button" class="btn-simple fw-bold" onclick="location.href='#engineering-philosophy'">Read More</a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECTION NO 3 -->
-        <section class="container-fluid section-3" id="engineering-philosophy">
-            <div class="row section-3-inner">
-                <div class="col-lg-6 section-3-inner-col-left text-center">
-                    <div class="primary-heading section-3-heading text-lg-end">
-                        I am <span id="typewriter-title" class="fw-bold"></span>
-                        <script>
-                            var app = document.getElementById('typewriter-title');
-                            var typewriter = new Typewriter(app, {
-                                loop: true
-                            });
-
-                            typewriter.typeString('an Engineer')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString('an IT Pro')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString('a Developer')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString('a Musician')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString('a Mentor')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString('an Adventurer')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString('a Creator')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .typeString('an Artist')
-                                .pauseFor(1200)
-                                .deleteAll()
-                                .start();
-                        </script>
-                    </div>
-                    <div class="section-3-image-left text-lg-end">
-                        <img src="./images/Section-3-image-1.jpg" class="img-fluid sec3-images sec3-img-left" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 section-3-inner-col-right text-center mt-5 mt-lg-0">
-                    <div class="section-3-image-right text-lg-start">
-                        <img src="./images/Section-3-image-2.jpg" class="img-fluid sec3-images sec3-img-right" alt="">
-                    </div>
-                    <div class="section-3-button-right text-lg-start">
-                        <button class="btn-secondary text-uppercase fw-bold" onclick="location.href='skills.html'">
-                            Check Out What I Do
-                        </button>
+                    <div class="sec5-portfolio-head">
+                        View Portfolio
                     </div>
                 </div>
             </div>
-            <div class="background-section-3"></div>
-        </section>
 
+            <div class="row mt-4 mt-md-5 work-gallery-row">
+                <div class="masonry">
+                    <!-- Work 1 -->
+                    <div class="grid">
+                        <img src="./images/work-1.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 2 -->
+                    <div class="grid">
+                        <img src="./images/work-2.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 3 -->
+                    <div class="grid">
+                        <img src="./images/work-3.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 4 -->
+                    <div class="grid">
+                        <img src="./images/work-4.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 5 -->
+                    <div class="grid">
+                        <img src="./images/work-5.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 6 -->
+                    <div class="grid">
+                        <img src="./images/work-6.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 7 -->
+                    <div class="grid">
+                        <img src="./images/work-7.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 8 -->
+                    <div class="grid">
+                        <img src="./images/work-8.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 9 -->
+                    <div class="grid">
+                        <img src="./images/work-9.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 10 -->
+                    <div class="grid">
+                        <img src="./images/work-10.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 11 -->
+                    <div class="grid">
+                        <img src="./images/work-11.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work 12 -->
+                    <div class="grid">
+                        <img src="./images/work-12.jpg" class="img-fluid image-work">
+                        <div class="grid__body">
+                            <div class="relative">
+                                <a class="grid__link" target="_blank" href="#"></a>
+                                <p class="grid__author">BY Mubeen Ahmad</p>
+                            </div>
+                            <div class="mt-auto">
+                                <span class="grid__tag">#Work 9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <!-- SECTION NO 4 -->
-        <section class="container-fluid section-4" id="personal-philosophy">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-4-left text-center text-lg-end pe-0 pe-lg-5">
-                        <span class="section-4-heading text__light">Always</span>
-                        <span class="section-4-heading-bold fw-bolder">Learning</span>
-                        <span class="section-4-heading text__light">Always</span>
-                        <span class="section-4-heading-bold fw-bolder">Growing</span>
-                    </div>
+                <div class="section-5-button mt-4 mt-sm-5 text-center">
+                    <button class="sec5-btn text-uppercase fw-bold" onclick="location.href='#'">View More</button>
                 </div>
-                <div class="col-lg-6">
-                    <div class="section-4-right text-center text-lg-start">
-                        <div class="sec4-blank"></div>
-                        <div class="sec4-text">
-                            Learning from failed experiments and experiences is a huge part of being an engineer. It is through failure that our theories are tested and knowledge is obtained.
-                            Obtaining knowledge is only half the battle; if we don't change our methods and processes based on what we've learned, we won't go anywhere.<br><br>
-                            To create solutions that last one must ask the tough questions, challenge all assumptions, and listen to every voice in the room. Once the problem is understood, a solution can be proposed, and through the fires of failure and growth, a proposal can become a great solution.<br><br> Never be afraid of failure, be afraid of not changing.
-                        </div>
-                        <div class="section-4-button">
-                            <button class="btn-secondary text-uppercase fw-bold" onclick="location.href='#'">Personal Philosophy</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experiences">
-            <div class="col text-center">
-                <div class="contact-heading">
-                    Experiences
-                </div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item" date-is='June, 2023 - Current'>
-                    <h1>Westech - Lead DevOps & Automation Engineer</h1>
-                    <p>
-                        Highlights<br>
-                        ◆ Created numerous scripts to automate retrieval of product information from manufacturers, saving hundreds of hours of labor.
-                        ◆ Created CI/CD pipelines (CircleCI), allowing for more streamlined and safe deploys
-                        ◆ Implemented features on website to allow for higher volume of orders, as well as higher SEO rankings.
-
-                    </p>
-                </div>
-                <div class="timeline-item" date-is='March, 2022 - March, 2023'>
-                    <h1>Whistic - Full-Stack Software Engineer</h1>
-                    <p>
-                        Highlights<br>
-                        ◆ Helping my team (and subsequently other teams) to better understand how to better utilize our log aggregation tools to quickly find issues, build better, more insightful metrics dashboards, and quickly find customers being affected by bugs and reach out to them<br>
-                        ◆ Planned and orchestrated a complete documentation overhaul that would allow customer service reps to find valuable information quicker, and software engineers to more effectively knowledge-share critical infrastructure.
-                    </p>
-                </div>
-                <div class="timeline-item" date-is='August, 20215 - November, 2021'>
-                    <h1>Director of IT</h1>
-                    <p>
-                        Highlights<br>
-                        ◆ Worked with Digital Reality to create a 3 stage disaster recovery plan across 3 continents to ensure all critical infrastructure has minimal downtime<br>
-                        ◆ Worked closely with developers to create and implement a Jenkins CI/CD pipeline allowing for much faster cycle times<br>
-                        ◆ Migrated all services from utilizing VM technology to containerization in Docker while still maintaining 99.999% uptime<br>
-                        ◆ Optimized poorly performant code which saved the company just over $10,000/yr in hosting costs
-                    </p>
-                </div>
-                <div class="timeline-item" date-is='January, 2021 - May, 2021'>
-                    <h1>Northwest Nazarene University - Teaching Assistant</h1>
-                    <p>
-                        Highlights<br>
-                        ◆ Using my experience in DevOps, I created numerous CI/CD pipelines that would build and run automated tests against my student's code<br>
-                        ◆ Performed much needed course overhauls, rewriting every assignment to have clearer requirements, and defined inputs and outputs, as well as concept understanding requirements<br>
-                        ◆ Using automated tests, I increased department efficiency by 75%, cutting down grading time from 20 hrs/wk to just 5 hrs/wk<br>
-                        ◆ Taught numerous workshops on how to be a good software engineer, teaching valuable skills that were not part of the core curriculum, such as how to perform code reviews, writing meaningful code, CI/CD pipelines, test-driven development, using Git, containerization, optimization
-                    </p>
-                </div>
-                <div class="timeline-item" date-is='August, 2017 - August, 2019'>
-                    <h1>Cache Valley Electric - Full-Stack Software Engineer</h1>
-                    <p>
-                        Highlights<br>
-                        ◆ Created applications allowing employees to better track orders, tasks, and time spent on projects. Allowing for greater efficiency and transparency, saving the company thousands.<br>
-                        ◆ Worked 1:1 with clients to understand their workflow, and how software can integrate with their current processes, participating in the planning, prototyping, and presenting on demos and deliverables.<br>
-                        ◆ Pioneered new coding practices and technology, such as the UI/UX framework that became standard for our team<br>
-                        ◆ Prototyped new technologies to our platform such as deep-linking and session variables
-                    </p>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="https://www.linkedin.com/in/corbin-whitton/details/experience/" target="_blank">
-                    <button class="btn-secondary text-uppercase fw-bold">
-                        See All Experiences
-                    </button>
-                </a>
             </div>
         </section>
 
@@ -286,7 +297,7 @@
 
             <div class="row mt-5">
                 <div class="section-6-button-see-all text-center">
-                    <button class="btn-secondary text-uppercase fw-bold" onclick="location.href='projects.html'">See All
+                    <button class="btn-secondary text-uppercase fw-bold" onclick="location.href='#'">See All
                         Projects</button>
                 </div>
             </div>
