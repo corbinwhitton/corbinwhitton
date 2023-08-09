@@ -462,6 +462,10 @@
         var(--primary-background-color)) 1 100%
     ;
 	}
+.timeline-item-title {
+    font-weight: bold;
+    font-size: larger;
+}
   
 
 /* SECTION NO 3 */
