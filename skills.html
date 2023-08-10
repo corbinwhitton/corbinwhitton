@@ -43,9 +43,13 @@
         <a id="nav-logo" class="navbar-brand" href="index.html">Corbin Whitton</a>
 
         <!-- Button collapsable -->
-        <button class="navbar-toggler" id="nav-btn" type="button" data-toggle="collapse"
+        <button class="navbar-toggler" id="nav-btn" data-toggle="collapse"
             data-target="#collapsibleNavbar">
-            <span class="navbar-btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span class="navbar-btn" onclick="navbarHamburgerChanger(this)">
+                <div class="navbar-btn-bar1"></div>
+                <div class="navbar-btn-bar2"></div>
+                <div class="navbar-btn-bar3"></div>
+            </span>
         </button>
         <!-- Links -->
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">

@@ -124,10 +124,33 @@
 .color-white {
     color: var(--sticky-navbar-text-color) !important;
 }
-
-.nav-btn-icon {
-    color: var(--navbar-logo-color);
+.navbar-toggler:focus {
+    box-shadow: none !important;
 }
+
+.navbar-btn {
+    color: var(--navbar-logo-color);
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .navbar-btn-bar1, .navbar-btn-bar2, .navbar-btn-bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: var(--navbar-logo-color);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .navbar-hamburger-active .navbar-btn-bar1 {
+    transform: translate(0, 9px) rotate(-45deg);
+  }
+  
+  .navbar-hamburger-active .navbar-btn-bar2 {opacity: 0;}
+  
+  .navbar-hamburger-active .navbar-btn-bar3 {
+    transform: translate(0, -9px) rotate(45deg);
+  }
 
 @media (max-width: 426px) {
     #navbar {

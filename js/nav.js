@@ -14,3 +14,7 @@ $(document).on("scroll", function(){
         $(".navbar-btn").removeClass("nav-btn-icon");
     }
 });
+
+function navbarHamburgerChanger(x) {
+  x.classList.toggle("navbar-hamburger-active");
+}
