@@ -1,0 +1,186 @@
+  
+  .book-container {
+    z-index: 1;
+    perspective:3000px;
+  }
+
+  .book-container {
+    --book-cover-color: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
+    --book-font-color: #2b2b2b;
+    --book-spine-color: rgba(232,229,234);
+    --book-size-width: 400px;
+    --book-size-height: 550px;
+  }
+  
+  .book-container .book {
+    position: relative;
+    display: block;
+    width: var(--book-size-width);
+    height: var(--book-size-height);
+    margin: 2% auto;
+    border-radius: 2px 4px 4px 2px;
+    background: var(--book-cover-color);
+    font-family: acumin-pro, sans-serif;
+    -webkit-box-shadow: 13px 13px 8px 0px var(--drop-shadow-color);
+    -moz-box-shadow: 13px 13px 8px 0px var(--drop-shadow-color);
+    box-shadow: 13px 13px 8px 0px var(--drop-shadow-color);
+    font-weight: 400;
+    color: var(--book-font-color);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    transition: transform .5s;
+  }
+  
+  .book-container .book:hover {
+    -webkit-transform: rotate3d(0,1,0,35deg);
+    -moz-transform: rotate3d(0,1,0,35deg);
+    transform: rotate3d(0,1,0,35deg);
+  }
+  
+  .book-container .book > div,
+  .book-container .front > div {
+    display: block;
+    position: absolute;
+  }
+  
+  
+  .book-container .front {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    transition: transform .5s;
+    -webkit-transform: translate3d(0,0,20px);
+    -moz-transform: translate3d(0,0,20px);
+    transform: translate3d(0,0,20px);
+    z-index: 10;
+  }
+  
+  .book-container .front > div {
+    width: var(--book-size-width);
+    height: var(--book-size-height);
+  }
+  
+  .book-container .left-side{
+    width: 40px;
+    left: -20px;
+    height: var(--book-size-height);
+    background-color: var(--book-spine-color);
+    -webkit-transform: rotate3d(0,1,0,-90deg);
+    -moz-transform: rotate3d(0,1,0,-90deg);
+    transform: rotate3d(0,1,0,-90deg);
+  }
+  
+  .book-container .front > div {
+    border-radius: 0 3px 3px 0;
+    box-shadow: 
+      inset 4px 0 10px var(--drop-shadow-color);
+  }
+  
+  .book-container .front:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: -1px;
+    width: 1px;
+  }
+  
+  .book-container .cover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    bottom: 0;
+    width: 3px;
+    background: rgba(0,0,0,0.1);
+    box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+  }
+  
+  
+  .book-container h2 {
+    width: 500px;
+    height: 40px;
+    color: var(--book-font-color);
+    font-size: 15px;
+    line-height: 40px;
+    padding-left: 10px;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(90deg) translateY(-40px);
+    -moz-transform: rotate(90deg) translateY(-40px);
+    transform: rotate(90deg) translateY(-40px);
+  }
+  
+  #howtowinfriends {
+    --book-cover-color: #ec3839;
+    --book-font-color: #fff;
+    --book-spine-color: #ec3839;
+    --book-size-width: 240px;
+    --book-size-height: 350px;
+    --book-spine-author-offset-right: 9em;
+    --book-spine-title-offset-left: 1em;
+  }  
+  
+  #fourdx {
+    --book-cover-color: #fff;
+    --book-font-color: #056baa;
+    --book-spine-color: #fff;
+    --book-size-width: 240px;
+    --book-size-height: 350px;
+    --book-spine-author-offset-right: 9em;
+    --book-spine-title-offset-left: 2.5em;
+  }
+
+  #multipliers {
+    --book-cover-color: #fed420;
+    --book-font-color: #172914;
+    --book-spine-color: #fed420;
+    --book-size-width: 240px;
+    --book-size-height: 350px;
+    --book-spine-author-offset-right: 9em;
+    --book-spine-title-offset-left: 14.5em;
+  }
+
+  #extremeownership {
+    --book-cover-color: #fff;
+    --book-font-color: #000000;
+    --book-spine-color: #fff;
+    --book-size-width: 240px;
+    --book-size-height: 350px;
+    --book-spine-author-offset-right: 9em;
+    --book-spine-title-offset-left: 9.5em;
+  }
+
+  .cover {
+    background: var(--book-cover-color);
+  }
+
+  .cover img{
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  .left-side h2 .book-author {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .left-side h2 .book-title {
+    margin-left: var(--book-spine-title-offset-left);
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  .left-side h2 span:last-child{
+    font-family: acumin-pro, sans-serif;
+  } 
+  

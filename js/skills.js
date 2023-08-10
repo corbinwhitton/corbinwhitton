@@ -4,7 +4,6 @@ async function fetchHtmlAsText(url) {
 }
 
 async function addPhotographyList() {
-    // Load the first 3 list items from another HTML file
     const contentDiv = document.getElementById("photography-list");
     contentDiv.innerHTML = await fetchHtmlAsText("skills/photography.html");
     var offset = 4;
@@ -20,7 +19,7 @@ async function addPhotographyList() {
     $('#show-less-pictures').hide();
     $('#load-more-pictures').click(function () {
         //$('#show-less-pictures').show();
-        shown = shown+(4*offset);
+        shown = shown+(12*offset);
         if(shown< items) {$('#photography-list div:lt('+shown+')').show();}
         else {$('#photography-list div:lt('+items+')').show();
             $('#show-less-pictures').show();
@@ -72,7 +71,16 @@ $(document).ready(async function () {
     addArtList();
 });
 
+let modalOptions = {
+    focus: false
+}
+var imageModal = new bootstrap.Modal(document.getElementById('image-modal'), modalOptions);
+
 function addModalToClick(event) {
     $('#imagepreview').attr('src', event.srcElement.parentElement.parentElement.parentElement.children[0].src); // here asign the image to the modal when the user click the enlarge link
-    $('#imagemodal').modal('show'); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+    imageModal.show(); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 };
+
+function destroyModal() {
+    imageModal.dispose;
+}

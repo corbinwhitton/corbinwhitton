@@ -41,6 +41,7 @@
     --input-background-color: #ffffff;
     --modal-background: #ffffff;
     --modal-border-color: #fff;
+    --portrait-background-color: #8b8b8b;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,6 +87,7 @@
         --input-background-color: #5f5f5f;
         --modal-background: #333;
         --modal-border-color: #7a7a7a;
+        --portrait-background-color: #7c7474;
     }
 }
 /* NAVBAR */
@@ -126,6 +128,10 @@
 }
 .navbar-toggler:focus {
     box-shadow: none !important;
+}
+
+.navbar-btn-white {
+    --navbar-logo-color: var(--sticky-navbar-text-color);
 }
 
 .navbar-btn {
@@ -190,7 +196,8 @@
 .image-frame {
     width: 380px;
     height: 380px;
-    background-image: url(../images/portrait.jpg);
+    background-image: url(../images/portrait.jpeg);
+    background-color: var(--portrait-background-color);
     background-position: center;
     background-size: cover;
     border: 8px solid var(--profile-image-border-color);
@@ -479,6 +486,13 @@
     border: 2px solid var(--timeline-bullet-border-color);
     background: var(--timeline-bullet-background-color);
 }
+.timeline-item:first-child {
+    border-image: linear-gradient(
+        to top,
+        var(--timeline-line-color) 95%,
+        var(--primary-background-color)) 1 100%
+    ;
+	}
 
 .timeline-item:last-child {
     border-image: linear-gradient(
@@ -532,6 +546,7 @@
 
 .btn-primary {
     font-family: Roboto, sans-serif;
+    text-decoration: none;
     padding: 10px 30px;
     border: 0px solid var(--primary-button-text-color) !important;
     color: var(--primary-button-text-color) !important;
@@ -663,6 +678,7 @@
 
 .btn-secondary {
     font-family: Roboto, sans-serif;
+    text-decoration: none;
     color: var(--secondary-button-text-color) !important;
     background-color: var(--secondary-button-background-color)!important;
     letter-spacing: 2px;
