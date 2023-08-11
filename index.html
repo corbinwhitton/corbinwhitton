@@ -27,14 +27,14 @@
         <a id="nav-logo" class="navbar-brand" href="/">Corbin Whitton</a>
 
         <!-- Button collapsable -->
-        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-btn" onclick="navbarHamburgerChanger(this)">
                 <div class="navbar-btn-bar1"></div>
                 <div class="navbar-btn-bar2"></div>
                 <div class="navbar-btn-bar3"></div>
             </span>
         </button>
+
         <!-- Links -->
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul id="nav-ul" class="navbar-nav">
@@ -47,9 +47,6 @@
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="#experiences">Experiences</a>
                 </li>
-                <!-- <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#portfolio">Portfolio</a>
-                </li> -->
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="#projects">Projects</a>
                 </li>
@@ -59,10 +56,9 @@
             </ul>
         </div>
     </nav>
-    <!-- Navbar End -->
 
     <main class="container-fluid main p-0" id="home">
-        <!-- SECTION NO 1 -->
+        <!-- Portrait Section -->
         <section class="container-fluid section-1">
             <div class="row section-1-inner">
                 <div class="col section-1-inner-col">
@@ -73,28 +69,34 @@
         </section>
 
 
-        <!-- SECTION NO 2 -->
+        <!-- About Me Section -->
         <section id="about-me" class="container-fluid section-2">
             <div class="row">
                 <div class="col text-center">
                     <div class="primary-heading">
+                        <!-- About Me Main Heading -->
                         About <span class="fw-bold primary-heading-bold">Corbin Whitton</span>
                     </div>
                     <h1 class="paragraph mx-auto mt-2" style="font-weight: normal;">
+                        <!-- About Me Blurb -->
                         DevOps Engineer | Full-Stack Software Engineer | Computer Scientist | IT Professional<br>
-                        I design, implement, and support solutions designed with non-profits in mind. I utilize technology to its fullest capabilities, developing solutions that are highly available, cost effective, and easy to understand.
-                    </h1    >
+                        I design, implement, and support solutions designed with non-profits in mind. I utilize
+                        technology to its fullest capabilities, developing solutions that are highly available, cost
+                        effective, and easy to understand.
+                    </h1>
+                    <!-- About Me Read More Button -->
                     <a type="button" class="btn-simple fw-bold" href="#what-I-do">Read More</a>
                 </div>
             </div>
         </section>
 
 
-        <!-- SECTION NO 3 -->
+        <!-- What I do section -->
         <section class="container-fluid section-3" id="what-I-do">
             <div class="row section-3-inner">
                 <div class="col-lg-6 section-3-inner-col-left text-center">
                     <div class="primary-heading section-3-heading text-lg-end">
+                        <!-- Typewriter text -->
                         I am <span id="typewriter-title" class="fw-bold"></span>
                         <script>
                             var app = document.getElementById('typewriter-title');
@@ -140,6 +142,7 @@
                     <div class="section-3-image-right text-lg-start">
                         <img src="./images/soundconsole.jpg" class="img-fluid sec3-images sec3-img-right" alt="">
                     </div>
+                    <!-- Check out what I do link button -->
                     <div class="section-3-button-right text-lg-start">
                         <a class="btn-secondary text-uppercase fw-bold" href="skills.html">
                             Check Out What I Do
@@ -151,7 +154,7 @@
         </section>
 
 
-        <!-- SECTION NO 4 -->
+        <!-- Personal Philosophy Section -->
         <section class="container-fluid section-4" id="personal-philosophy">
             <div class="row">
                 <div class="col-lg-6">
@@ -165,19 +168,27 @@
                 <div class="col-lg-6">
                     <div class="section-4-right text-center text-lg-start">
                         <div class="sec4-blank"></div>
+                        <!-- Personal Philosophy Blurb -->
                         <div class="sec4-text">
-                            Learning from failed experiments and experiences is a huge part of being an engineer. It is through failure that our theories are tested and knowledge is obtained.
-                            Obtaining knowledge is only half the battle; if we don't change our methods and processes based on what we've learned, we won't go anywhere.<br><br>
-                            To create solutions that last one must ask the tough questions, challenge all assumptions, and listen to every voice in the room. Once the problem is understood, a solution can be proposed, and through the fires of failure and growth, a proposal can become a great solution.<br><br> Never be afraid of failure, be afraid of not changing.
+                            Learning from failed experiments and experiences is a huge part of being an engineer. It is
+                            through failure that our theories are tested and knowledge is obtained.
+                            Obtaining knowledge is only half the battle; if we don't change our methods and processes
+                            based on what we've learned, we won't go anywhere.<br><br>
+                            To create solutions that last one must ask the tough questions, challenge all assumptions,
+                            and listen to every voice in the room. Once the problem is understood, a solution can be
+                            proposed, and through the fires of failure and growth, a proposal can become a great
+                            solution.<br><br> Never be afraid of failure, be afraid of not changing.
                         </div>
                         <div class="section-4-button">
-                            <a class="btn-secondary text-uppercase fw-bold" href="philosophy.html">Personal Philosophy</a>
+                            <a class="btn-secondary text-uppercase fw-bold" href="philosophy.html">Personal
+                                Philosophy</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Experiences Timeline Section -->
         <section id="experiences">
             <div class="col text-center">
                 <div class="contact-heading">
@@ -185,64 +196,95 @@
                 </div>
             </div>
             <div class="timeline">
+                <!-- Westech -->
                 <div class="timeline-item" date-is='June, 2023 - Current'>
                     <div class="timeline-item-title">Westech - Lead DevOps & Automation Engineer</div>
                     <p>
                         Highlights<br>
-                        ◆ Created numerous scripts to automate retrieval of product information from manufacturers, saving hundreds of hours of labor.<br>
+                        ◆ Created numerous scripts to automate retrieval of product information from manufacturers,
+                        saving hundreds of hours of labor.<br>
                         ◆ Created CI/CD pipelines (CircleCI), allowing for more streamlined and safe deploys<br>
-                        ◆ Implemented features on website to allow for higher volume of orders, as well as higher SEO rankings.
+                        ◆ Implemented features on website to allow for higher volume of orders, as well as higher SEO
+                        rankings.
 
                     </p>
                 </div>
+
+                <!-- Whistic -->
                 <div class="timeline-item" date-is='March, 2022 - March, 2023'>
                     <div class="timeline-item-title">Whistic - Full-Stack Software Engineer</div>
                     <p>
                         Highlights<br>
-                        ◆ Helping my team (and subsequently other teams) to better understand how to better utilize our log aggregation tools to quickly find issues, build better, more insightful metrics dashboards, and quickly find customers being affected by bugs and reach out to them<br>
-                        ◆ Planned and orchestrated a complete documentation overhaul that would allow customer service reps to find valuable information quicker, and software engineers to more effectively knowledge-share critical infrastructure.
+                        ◆ Helping my team (and subsequently other teams) to better understand how to better utilize our
+                        log aggregation tools to quickly find issues, build better, more insightful metrics dashboards,
+                        and quickly find customers being affected by bugs and reach out to them<br>
+                        ◆ Planned and orchestrated a complete documentation overhaul that would allow customer service
+                        reps to find valuable information quicker, and software engineers to more effectively
+                        knowledge-share critical infrastructure.
                     </p>
                 </div>
+
+                <!-- Game Dev Studio -->
                 <div class="timeline-item" date-is='August, 20215 - November, 2021'>
                     <div class="timeline-item-title">Director of IT</div>
                     <p>
                         Highlights<br>
-                        ◆ Worked with Digital Reality to create a 3 stage disaster recovery plan across 3 continents to ensure all critical infrastructure has minimal downtime<br>
-                        ◆ Worked closely with developers to create and implement a Jenkins CI/CD pipeline allowing for much faster cycle times<br>
-                        ◆ Migrated all services from utilizing VM technology to containerization in Docker while still maintaining 99.999% uptime<br>
+                        ◆ Worked with Digital Reality to create a 3 stage disaster recovery plan across 3 continents to
+                        ensure all critical infrastructure has minimal downtime<br>
+                        ◆ Worked closely with developers to create and implement a Jenkins CI/CD pipeline allowing for
+                        much faster cycle times<br>
+                        ◆ Migrated all services from utilizing VM technology to containerization in Docker while still
+                        maintaining 99.999% uptime<br>
                         ◆ Optimized poorly performant code which saved the company just over $10,000/yr in hosting costs
                     </p>
                 </div>
+
+                <!-- Northwest Nazarene University -->
                 <div class="timeline-item" date-is='January, 2021 - May, 2021'>
                     <div class="timeline-item-title">Northwest Nazarene University - Teaching Assistant</div>
                     <p>
                         Highlights<br>
-                        ◆ Using my experience in DevOps, I created numerous CI/CD pipelines that would build and run automated tests against my student's code<br>
-                        ◆ Performed much needed course overhauls, rewriting every assignment to have clearer requirements, and defined inputs and outputs, as well as concept understanding requirements<br>
-                        ◆ Using automated tests, I increased department efficiency by 75%, cutting down grading time from 20 hrs/wk to just 5 hrs/wk<br>
-                        ◆ Taught numerous workshops on how to be a good software engineer, teaching valuable skills that were not part of the core curriculum, such as how to perform code reviews, writing meaningful code, CI/CD pipelines, test-driven development, using Git, containerization, optimization
+                        ◆ Using my experience in DevOps, I created numerous CI/CD pipelines that would build and run
+                        automated tests against my student's code<br>
+                        ◆ Performed much needed course overhauls, rewriting every assignment to have clearer
+                        requirements, and defined inputs and outputs, as well as concept understanding requirements<br>
+                        ◆ Using automated tests, I increased department efficiency by 75%, cutting down grading time
+                        from 20 hrs/wk to just 5 hrs/wk<br>
+                        ◆ Taught numerous workshops on how to be a good software engineer, teaching valuable skills that
+                        were not part of the core curriculum, such as how to perform code reviews, writing meaningful
+                        code, CI/CD pipelines, test-driven development, using Git, containerization, optimization
                     </p>
                 </div>
+
+                <!-- Cache Valley Electric -->
                 <div class="timeline-item" date-is='August, 2017 - August, 2019'>
                     <div class="timeline-item-title">Cache Valley Electric - Full-Stack Software Engineer</div>
                     <p>
                         Highlights<br>
-                        ◆ Created applications allowing employees to better track orders, tasks, and time spent on projects. Allowing for greater efficiency and transparency, saving the company thousands.<br>
-                        ◆ Worked 1:1 with clients to understand their workflow, and how software can integrate with their current processes, participating in the planning, prototyping, and presenting on demos and deliverables.<br>
-                        ◆ Pioneered new coding practices and technology, such as the UI/UX framework that became standard for our team<br>
+                        ◆ Created applications allowing employees to better track orders, tasks, and time spent on
+                        projects. Allowing for greater efficiency and transparency, saving the company thousands.<br>
+                        ◆ Worked 1:1 with clients to understand their workflow, and how software can integrate with
+                        their current processes, participating in the planning, prototyping, and presenting on demos and
+                        deliverables.<br>
+                        ◆ Pioneered new coding practices and technology, such as the UI/UX framework that became
+                        standard for our team<br>
                         ◆ Prototyped new technologies to our platform such as deep-linking and session variables
                     </p>
                 </div>
             </div>
+
+            <!-- See All Experiences Button -> LinkedIn -->
             <div class="text-center">
-                <a class="btn-secondary text-uppercase fw-bold mb-5" href="https://www.linkedin.com/in/corbin-whitton/details/experience/" target="_blank">See All Experiences</a>
+                <a class="btn-secondary text-uppercase fw-bold mb-5"
+                    href="https://www.linkedin.com/in/corbin-whitton/details/experience/" target="_blank">See All
+                    Experiences</a>
             </div>
         </section>
 
         <!-- Divider -->
         <div class="bold-line"></div>
 
-        <!-- SECTION NO 6 -->
+        <!-- My Projects Section -->
         <section class="container-fluid section-6" id="projects">
             <div class="row">
                 <div class="col-12 text-center">
@@ -255,46 +297,62 @@
                     <br><br>
                 </div>
             </div>
+
+            <!-- Westech Website Project -->
             <div class="row section-6-inner mx-auto">
                 <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
                     <div class="section-6-heading">
                         <span class="fw-bold">Westech Equipment</span> Website
                     </div>
                     <div class="section-6-para">
-                        Used my experience in DevOps to create coding pipelines to automate deploys and testing. I also created numerous scripts and routines that would allow employees to fetch latest product information from manufacturers, allowing for greater productivity.
+                        Used my experience in DevOps to create coding pipelines to automate deploys and testing. I also
+                        created numerous scripts and routines that would allow employees to fetch latest product
+                        information from manufacturers, allowing for greater productivity.
                     </div>
                     <div class="section-6-button">
-                        <a class="btn-simple text-uppercase fw-bold" href="https://westechequipment.com" target="_blank">View Project</a>
+                        <a class="btn-simple text-uppercase fw-bold" href="https://westechequipment.com"
+                            target="_blank">View Project</a>
                     </div>
                 </div>
-                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block"><img src="/images/projects/westech.jpeg" class="img-fluid sec6-image" alt="">
-                </div>
-            </div>
-            <div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Whistic</span> Integrations 
-                    </div>
-                    <div class="section-6-para">
-                        Worked alongside the Whistic integrations team to break out code from our monolithic architecture to a microservice architecture, allowing for more rapid development and deployments. Integrated the Whistic platform with Salesforce, Slack, Webhooks, the Whistic Public API, and RFPIO. Wrote automated tests to increase code coverage and adequately test edge cases. Used Angular to create user-interfaces that were functional and easily understood. From my experience in IT and DevOps, I created numerous dashboards and log queries to quickly find problems, increasing team accountability, and productivity.
-                    </div>
-                    <div class="section-6-button">
-                        <a class="btn-simple text-uppercase fw-bold" href="https://whistic.com" target="_blank">View Project</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block"><img src="/images/projects/whistic.jpeg" class="img-fluid sec6-image" alt="">
+                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block"><img
+                        src="/images/projects/westech.jpeg" class="img-fluid sec6-image" alt="">
                 </div>
             </div>
 
+            <!-- Whistic Integrations Project -->
+            <div class="row section-6-inner mx-auto mt-5">
+                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
+                    <div class="section-6-heading">
+                        <span class="fw-bold">Whistic</span> Integrations
+                    </div>
+                    <div class="section-6-para">
+                        Worked alongside the Whistic integrations team to break out code from our monolithic
+                        architecture to a microservice architecture, allowing for more rapid development and
+                        deployments. Integrated the Whistic platform with Salesforce, Slack, Webhooks, the Whistic
+                        Public API, and RFPIO. Wrote automated tests to increase code coverage and adequately test edge
+                        cases. Used Angular to create user-interfaces that were functional and easily understood. From
+                        my experience in IT and DevOps, I created numerous dashboards and log queries to quickly find
+                        problems, increasing team accountability, and productivity.
+                    </div>
+                    <div class="section-6-button">
+                        <a class="btn-simple text-uppercase fw-bold" href="https://whistic.com" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block"><img
+                        src="/images/projects/whistic.jpeg" class="img-fluid sec6-image" alt="">
+                </div>
+            </div>
+
+            <!-- See All Projects Button -->
             <div class="row mt-5">
                 <div class="section-6-button-see-all text-center">
-                    <button class="btn-secondary text-uppercase fw-bold" onclick="location.href='projects.html'">See All
-                        Projects</button>
+                    <a class="btn-secondary text-uppercase fw-bold" href="projects.html">See All Projects</a>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION CONTACT -->
+        <!-- Contact Section -->
         <section id="contact" class="container-fluid section-contact">
             <div class="row">
                 <div class="col-12 text-center">
@@ -308,51 +366,75 @@
             </div>
             <div class="row card-row-2">
                 <div class="contact-form-div">
-                    <form action="https://formspree.io/f/xqkojodb" method="POST" class="contact-form col-lg-10 ms-auto me-auto">
+                    <!-- Contact Form -->
+                    <form action="https://formspree.io/f/xqkojodb" method="POST"
+                        class="contact-form col-lg-10 ms-auto me-auto">
+                        <!-- Contact Form Name Field -->
                         <div class="form-group mt-3 mt-sm-4">
-                            <input type="text" id="contact-name" name="Name" class="form-control" placeholder="Your Name">
+                            <input type="text" id="contact-name" name="Name" class="form-control"
+                                placeholder="Your Name">
                         </div>
+
+                        <!-- Contact Form Email Field -->
                         <div class="form-group mt-3 mt-sm-4">
-                            <input type="text" id="contact-email" name="Email" class="form-control" placeholder="Your Email">
+                            <input type="text" id="contact-email" name="Email" class="form-control"
+                                placeholder="Your Email">
                         </div>
+
+                        <!-- Contact Form Subject Field -->
                         <div class="form-group mt-3 mt-sm-4">
-                            <input type="text" id="contact-subject" name="Subject" class="form-control" placeholder="Subject">
+                            <input type="text" id="contact-subject" name="Subject" class="form-control"
+                                placeholder="Subject">
                         </div>
+
+                        <!-- Contact Form Message Field -->
                         <div class="form-group mt-3 mt-sm-4">
                             <textarea id="contact-message" name="Message" cols="30" rows="7" class="form-control"
                                 placeholder="Message"></textarea>
                         </div>
                         <div class="form-group mt-3 mt-sm-4 form-button">
-                            <input class="btn-primary text-uppercase fw-bold" type="submit" value="Send Message" id="contact-button">
-                            <button type="button" class="btn-primary text-uppercase fw-bold" data-cal-link="cwhitton" data-cal-config='{"layout":"month_view"}'>Book Me</button>
+                            <!-- Contact Form Submission Button -->
+                            <input class="btn-primary text-uppercase fw-bold" type="submit" value="Send Message"
+                                id="contact-button">
+
+                            <!-- Book Me Button -->
+                            <button type="button" class="btn-primary text-uppercase fw-bold" data-cal-link="cwhitton"
+                                data-cal-config='{"layout":"month_view"}'>Book Me</button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
 
-
-        <!-- SECTION NO 7 -->
-        <section class="container-fluid section-7">
+        <!-- Social Section -->
+        <section class="container-fluid section-7" id="socials">
             <div class="row section-7-inner mx-auto text-center">
                 <div class="col">
                     <div class="section-7-text">
                         Stay in the loop! Please follow me on social media so we can keep in touch.
                     </div>
                     <div class="section-7-icons">
-                        <a href="https://www.linkedin.com/in/corbin-whitton/" target="_blank" class="social-icons" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://stackoverflow.com/users/11412642/undying-soul" target="_blank" class="social-icons" aria-label="StackOverflow"><i class="fa-brands fa-stack-overflow"></i></a>
-                        <a href="https://gitlab.com/UndyingSoul" target="_blank" class="social-icons" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
-                        <a href="https://github.com/UndyingSoul" target="_blank" class="social-icons" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://cal.com/cwhitton" target="_blank" class="social-icons" aria-label="My Calendar"><i class="fa-solid fa-calendar-days"></i></a>
-                        <a href="https://dot.cards/corbin_whitton" target="_blank" class="social-icons" aria-label="Digital Business Card"><i class="fa-solid fa-id-card"></i></a>
-                        <a href="https://instagram.com/that.one.guy.corbin" target="_blank" class="social-icons" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/corbin-whitton/" target="_blank" class="social-icons"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://stackoverflow.com/users/11412642/undying-soul" target="_blank"
+                            class="social-icons" aria-label="StackOverflow"><i
+                                class="fa-brands fa-stack-overflow"></i></a>
+                        <a href="https://gitlab.com/UndyingSoul" target="_blank" class="social-icons"
+                            aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+                        <a href="https://github.com/UndyingSoul" target="_blank" class="social-icons"
+                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://cal.com/cwhitton" target="_blank" class="social-icons"
+                            aria-label="My Calendar"><i class="fa-solid fa-calendar-days"></i></a>
+                        <a href="https://dot.cards/corbin_whitton" target="_blank" class="social-icons"
+                            aria-label="Digital Business Card"><i class="fa-solid fa-id-card"></i></a>
+                        <a href="https://instagram.com/that.one.guy.corbin" target="_blank" class="social-icons"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION NO 8 -->
+        <!-- Footer Section -->
         <footer class="container-fluid footer">
             <!-- <div class="row section-footer-inner mx-auto">
                 <div class="col-sm-4">
@@ -402,16 +484,18 @@
             <!-- Divider -->
             <!-- <hr style="border-bottom: 1px solid #FFFFFF;"> -->
 
+            <!-- Copyright Section -->
             <div class="row section-footer-inner">
                 <div class="col">
-                    
                     <div class="footer-copyright text-center mt-2">
-                        Corbin Whitton &copy; 
+                        Corbin Whitton &copy;
                         <script type="text/JavaScript">
                         document.write(new Date().getFullYear());
                         </script>
                         <br>
-                        Utilizes: <i class="fab fa-html5" title="HTML 5"></i> <i class="fab fa-css3-alt" title="CSS 3"></i> <i class="fab fa-js" title="JavaScript"></i> <i class="fa-brands fa-bootstrap" title="Bootstrap 5"></i>
+                        Utilizes: <i class="fab fa-html5" title="HTML 5"></i> <i class="fab fa-css3-alt"
+                            title="CSS 3"></i> <i class="fab fa-js" title="JavaScript"></i> <i
+                            class="fa-brands fa-bootstrap" title="Bootstrap 5"></i>
                     </div>
                 </div>
             </div>

@@ -25,8 +25,7 @@
         <a id="nav-logo" class="navbar-brand" href="/">Corbin Whitton</a>
 
         <!-- Button collapsable -->
-        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-btn" onclick="navbarHamburgerChanger(this)">
                 <div class="navbar-btn-bar1"></div>
                 <div class="navbar-btn-bar2"></div>
@@ -45,9 +44,6 @@
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="/#experiences">Experiences</a>
                 </li>
-                <!-- <li class="nav-item navigation-list">
-                    <a class="nav-link nav-custom-link" href="#portfolio">Portfolio</a>
-                </li> -->
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="/#projects">Projects</a>
                 </li>
@@ -57,30 +53,37 @@
             </ul>
         </div>
     </nav>
-    <!-- Navbar End -->
+
     <main class="container-fluid main p-0">
-        <div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="image-modal" aria-hidden="true">
+        <!-- Image Modal Definition -->
+        <div class="modal fade" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="image-modal"
+            aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-md-down">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Image preview</h4>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Image preview</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-fluid" src="" id="imagepreview">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            onclick="destroyModal()">Close</button>
+                    </div>
                 </div>
-                <div class="modal-body text-center">
-                  <img class="img-fluid" src="" id="imagepreview" >
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="destroyModal()">Close</button>
-                </div>
-              </div>
             </div>
-          </div>
+        </div>
+
+        <!-- Photography Section -->
         <section class="container-fluid section-5" id="photography">
+            <!-- Photography Section Heading -->
             <div class="col text-center mt-5">
                 <div class="contact-heading">
                     Photography
                 </div>
             </div>
             <div class="row mt-4 mt-md-5 work-gallery-row">
+                <!-- List from photography.html -->
                 <div class="masonry" id="photography-list" data-bs-toggle="modal" data-bs-target="#image-modal">
                 </div>
             </div>
@@ -99,13 +102,16 @@
         <!-- Divider -->
         <div class="bold-line" style="margin-bottom: -4em;"></div>
 
+        <!-- Art Section -->
         <section class="container-fluid section-5" id="art">
+            <!-- Art Section Heading -->
             <div class="col text-center mt-5">
                 <div class="contact-heading">
                     Art
                 </div>
             </div>
             <div class="row mt-4 mt-md-5 work-gallery-row">
+                <!-- List from art.html -->
                 <div class="masonry" id="art-list" data-toggle="modal" data-target="#image-modal">
                 </div>
             </div>
@@ -120,19 +126,25 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- Divider -->
         <div class="bold-line" style="margin-bottom: -4em;"></div>
-        
+
+        <!-- Music Section -->
         <section class="container-fluid section-5" id="music">
+            <!-- Music Section Heading-->
             <div class="col text-center mt-5 mb-5">
                 <div class="contact-heading">
                     Music
                 </div>
             </div>
             <div class="text-center">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2qw9c4KU6uqD4axXDq96jO?utm_source=generator&theme=0" width="75%" height="500" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+                <!-- Spotify Embed -->
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/artist/2qw9c4KU6uqD4axXDq96jO?utm_source=generator&theme=0"
+                    width="75%" height="500" frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
             </div>
         </section>
 
@@ -144,19 +156,27 @@
                         Stay in the loop! Please follow me on social media so we can keep in touch.
                     </div>
                     <div class="section-7-icons">
-                        <a href="https://www.linkedin.com/in/corbin-whitton/" target="_blank" class="social-icons" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://stackoverflow.com/users/11412642/undying-soul" target="_blank" class="social-icons" aria-label="StackOverflow"><i class="fa-brands fa-stack-overflow"></i></a>
-                        <a href="https://gitlab.com/UndyingSoul" target="_blank" class="social-icons" aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
-                        <a href="https://github.com/UndyingSoul" target="_blank" class="social-icons" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://cal.com/cwhitton" target="_blank" class="social-icons" aria-label="My Calendar"><i class="fa-solid fa-calendar-days"></i></a>
-                        <a href="https://dot.cards/corbin_whitton" target="_blank" class="social-icons" aria-label="Digital Business Card"><i class="fa-solid fa-id-card"></i></a>
-                        <a href="https://instagram.com/that.one.guy.corbin" target="_blank" class="social-icons" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/corbin-whitton/" target="_blank" class="social-icons"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://stackoverflow.com/users/11412642/undying-soul" target="_blank"
+                            class="social-icons" aria-label="StackOverflow"><i
+                                class="fa-brands fa-stack-overflow"></i></a>
+                        <a href="https://gitlab.com/UndyingSoul" target="_blank" class="social-icons"
+                            aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
+                        <a href="https://github.com/UndyingSoul" target="_blank" class="social-icons"
+                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://cal.com/cwhitton" target="_blank" class="social-icons"
+                            aria-label="My Calendar"><i class="fa-solid fa-calendar-days"></i></a>
+                        <a href="https://dot.cards/corbin_whitton" target="_blank" class="social-icons"
+                            aria-label="Digital Business Card"><i class="fa-solid fa-id-card"></i></a>
+                        <a href="https://instagram.com/that.one.guy.corbin" target="_blank" class="social-icons"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION NO 8 -->
+        <!-- Footer Section-->
         <footer class="container-fluid footer">
             <!-- <div class="row section-footer-inner mx-auto">
                 <div class="col-sm-4">
@@ -206,21 +226,23 @@
             <!-- Divider -->
             <!-- <hr style="border-bottom: 1px solid #FFFFFF;"> -->
 
+            <!-- Copyright Section -->
             <div class="row section-footer-inner">
                 <div class="col">
-                    
                     <div class="footer-copyright text-center mt-2">
-                        Corbin Whitton &copy; 
+                        Corbin Whitton &copy;
                         <script type="text/JavaScript">
                         document.write(new Date().getFullYear());
                         </script>
                         <br>
-                        Utilizes: <i class="fab fa-html5" title="HTML 5"></i> <i class="fab fa-css3-alt" title="CSS 3"></i> <i class="fab fa-js" title="JavaScript"></i> <i class="fa-brands fa-bootstrap" title="Bootstrap 5"></i>
+                        Utilizes: <i class="fab fa-html5" title="HTML 5"></i> <i class="fab fa-css3-alt"
+                            title="CSS 3"></i> <i class="fab fa-js" title="JavaScript"></i> <i
+                            class="fa-brands fa-bootstrap" title="Bootstrap 5"></i>
                     </div>
                 </div>
             </div>
         </footer>
     </main>
 </body>
-<script src="js/skills.js"></script>
+
 </html>
