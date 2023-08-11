@@ -7,30 +7,31 @@ async function addPhotographyList() {
     const contentDiv = document.getElementById("photography-list");
     contentDiv.innerHTML = await fetchHtmlAsText("skills/photography.html");
     var offset = 4;
-    var minShown = 4*offset;
-    var items =  document.getElementsByClassName('photography-list-image').length*offset;
+    var minShown = 4 * offset;
+    var items = document.getElementsByClassName('photography-list-image').length * offset;
     var photographyImages = document.getElementsByClassName('photography-list-image');
     for (var i = 0; i < photographyImages.length; i++) {
-        photographyImages[i].addEventListener('click', (event) => {addModalToClick(event)}, false);
+        photographyImages[i].addEventListener('click', (event) => { addModalToClick(event) }, false);
     }
-    var shown =  4*offset;
+    var shown = 4 * offset;
     $('#photography-list div').hide();
-    $('#photography-list div:lt('+shown+')').show();
+    $('#photography-list div:lt(' + shown + ')').show();
     $('#show-less-pictures').hide();
     $('#load-more-pictures').click(function () {
         //$('#show-less-pictures').show();
-        shown = shown+(12*offset);
-        if(shown< items) {$('#photography-list div:lt('+shown+')').show();}
-        else {$('#photography-list div:lt('+items+')').show();
+        shown = shown + (12 * offset);
+        if (shown < items) { $('#photography-list div:lt(' + shown + ')').show(); }
+        else {
+            $('#photography-list div:lt(' + items + ')').show();
             $('#show-less-pictures').show();
             $('#load-more-pictures').hide();
-            }
+        }
     });
     $('#show-less-pictures').click(function () {
         $('#show-less-pictures').hide();
         shown = minShown;
         $('#load-more-pictures').show();
-        $('#photography-list div').not(':lt('+minShown+')').hide();
+        $('#photography-list div').not(':lt(' + minShown + ')').hide();
     });
 }
 
@@ -39,30 +40,31 @@ async function addArtList() {
     const contentDiv = document.getElementById("art-list");
     contentDiv.innerHTML = await fetchHtmlAsText("skills/art.html");
     var offset = 4;
-    var minShown = 4*offset;
-    var items =  document.getElementsByClassName('art-list-image').length*offset;
+    var minShown = 4 * offset;
+    var items = document.getElementsByClassName('art-list-image').length * offset;
     var artImages = document.getElementsByClassName('art-list-image');
     for (var i = 0; i < artImages.length; i++) {
-        artImages[i].addEventListener('click', (event) => {addModalToClick(event)}, false);
+        artImages[i].addEventListener('click', (event) => { addModalToClick(event) }, false);
     }
-    var shown =  4*offset;
+    var shown = 4 * offset;
     $('#art-list div').hide();
-    $('#art-list div:lt('+shown+')').show();
+    $('#art-list div:lt(' + shown + ')').show();
     $('#show-less-art').hide();
     $('#load-more-art').click(function () {
         //$('#show-less-art').show();
-        shown = shown+(4*offset);
-        if(shown< items) {$('#art-list div:lt('+shown+')').show();}
-        else {$('#art-list div:lt('+items+')').show();
+        shown = shown + (4 * offset);
+        if (shown < items) { $('#art-list div:lt(' + shown + ')').show(); }
+        else {
+            $('#art-list div:lt(' + items + ')').show();
             $('#show-less-art').show();
             $('#load-more-art').hide();
-            }
+        }
     });
     $('#show-less-art').click(function () {
         $('#show-less-art').hide();
         shown = minShown;
         $('#load-more-art').show();
-        $('#art-list div').not(':lt('+minShown+')').hide();
+        $('#art-list div').not(':lt(' + minShown + ')').hide();
     });
 }
 
@@ -77,7 +79,7 @@ let modalOptions = {
 var imageModal = new bootstrap.Modal(document.getElementById('image-modal'), modalOptions);
 
 function addModalToClick(event) {
-    $('#imagepreview').attr('src', event.srcElement.parentElement.parentElement.parentElement.children[0].src); // here asign the image to the modal when the user click the enlarge link
+    $('#imagepreview').attr('src', event.srcElement.parentElement.parentElement.parentElement.children[0].src.replace(/(\.[\w\d_-]+)$/i, '-lg$1')); // here asign the image to the modal when the user click the enlarge link
     imageModal.show(); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 };
 
