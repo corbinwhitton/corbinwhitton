@@ -16,3 +16,7 @@ $(document).on("scroll", function () {
 function navbarHamburgerChanger(x) {
   x.classList.toggle("navbar-hamburger-active");
 }
+
+$(document).ready(function() {
+  $('a[rel=external]').attr('target', '_blank').attr('rel', 'external noopener noreferrer');
+})
