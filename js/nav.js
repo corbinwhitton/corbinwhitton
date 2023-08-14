@@ -23,7 +23,13 @@ function openInNewWindow(url) {
   console.log(url + " opened in new window securely");
 }
 
+function logConsoleWelcomeMessage() {
+  var welcomeMessage = "Howdy! Welcome to Corbin's console, seems like we'd make great friends considering you even made it here. Reach out to me on LinkedIn (https://www.linkedin.com/in/corbin-whitton/) and tell me that my website console sent ya! If you see any bugs, or have comments/suggestions, reach out, I'd love your feedback."
+  console.log(welcomeMessage)
+}
+
 $(document).ready(function() {
+  logConsoleWelcomeMessage();
   $('a[rel=external]').click(function() {
     openInNewWindow(this.href);
     return false;
