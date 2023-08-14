@@ -17,6 +17,15 @@ function navbarHamburgerChanger(x) {
   x.classList.toggle("navbar-hamburger-active");
 }
 
+function openInNewWindow(url) {
+  var newWindow = window.open(url);
+  newWindow.opener = null;
+  console.log(url + " opened in new window securely");
+}
+
 $(document).ready(function() {
-  $('a[rel=external]').attr('target', '_blank').attr('rel', 'external noopener noreferrer');
+  $('a[rel=external]').click(function() {
+    openInNewWindow(this.href);
+    return false;
+  })
 })
