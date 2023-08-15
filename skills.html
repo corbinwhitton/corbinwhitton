@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Embark on a multifaceted journey through the lens of a software engineer's passions. Discover captivating photography, expressive art, harmonious music, and thrilling adventures on my hobbies page. Uncover the perfect blend of creativity and technical prowess as I share my diverse interests with you.">
     <!-- Site Info -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Corbin Whitton | Skills</title>
@@ -26,13 +28,12 @@
     <!-- Preload JavaScript -->
     <link rel="preconnect preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script"
         async crossorigin="anonymous">
-    <link rel="preconnect preload"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" async crossorigin="anonymous">
-    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async crossorigin="anonymous">
-    <link rel="preconnect preload" href="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js" as="script" async
+    <link rel="preconnect preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        as="script" async crossorigin="anonymous">
+    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async
         crossorigin="anonymous">
     <link rel="preconnect preload" href="/js/nav.js" as="script" async>
-    <link rel="preconnect preload" href="/js/skills.js" as="script" async>
+    <link rel="preconnect preload" href="/js/nav.js" as="script" async>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha384-NXgwF8Kv9SSAr+jemKKcbvQsz+teULH/a5UNJvZc6kP47hZgl62M1vGnw6gHQhb1"
@@ -43,9 +44,6 @@
     <script src="https://kit.fontawesome.com/67077bf8f9.js"
         integrity="sha384-Py6MaQ5kPZSlRQbN8uZQ5qPkVJ0Mqr6qZfAPC3mWSuh5484O3vXSb3RwuwShQQ6Z" crossorigin="anonymous"
         async defer></script>
-    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"
-        integrity="sha384-I60FYFD6QVfhcmdoh/pmZ1HSRg/MKCy8nX4lzCQmY/FBVCUzTydG+mMhT78gTM1e"
-        crossorigin="anonymous"></script>
     <script src="js/nav.js" defer></script>
     <!-- Largest Contentful Paint -->
     <link rel="preconnect preload" as="image" href="/images/gallery/photos/1.jpeg" async>
@@ -56,7 +54,8 @@
     <link rel="preconnect preload" as="image" href="/images/gallery/art/2.jpeg" async>
     <link rel="preconnect preload" as="image" href="/images/gallery/art/3.jpeg" async>
     <link rel="preconnect preload" as="image" href="/images/gallery/art/4.jpeg" async>
-    <link rel="preconnect" href="https://open.spotify.com/embed/artist/2qw9c4KU6uqD4axXDq96jO?utm_source=generator&theme=0" as="embed">
+    <link rel="preconnect"
+        href="https://open.spotify.com/embed/artist/2qw9c4KU6uqD4axXDq96jO?utm_source=generator&theme=0" as="embed">
 </head>
 
 <body>
@@ -66,15 +65,18 @@
         <a id="nav-logo" class="navbar-brand" href="/">Corbin Whitton</a>
 
         <!-- Button collapsable -->
-        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+            aria-expanded="false" aria-haspopup="true" aria-controls="collapse" aria-label="Navbar">
             <span class="navbar-btn" onclick="navbarHamburgerChanger(this)">
                 <div class="navbar-btn-bar1"></div>
                 <div class="navbar-btn-bar2"></div>
                 <div class="navbar-btn-bar3"></div>
             </span>
         </button>
+
         <!-- Links -->
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" role="navigation"
+            aria-label="Main">
             <ul id="nav-ul" class="navbar-nav">
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="/">Home</a>
@@ -108,18 +110,17 @@
                         <img class="img-fluid" src="" id="imagepreview">
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                            onclick="destroyModal()">Close</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Photography Section -->
-        <section class="container-fluid section-5" id="photography">
+        <section class="container-fluid pt-5" id="photography">
             <!-- Photography Section Heading -->
             <div class="col text-center mt-5">
-                <div class="contact-heading">
+                <div class="display-1 fw-bold">
                     Photography
                 </div>
             </div>
@@ -141,13 +142,13 @@
         </section>
 
         <!-- Divider -->
-        <div class="bold-line" style="margin-bottom: -4em;"></div>
+        <div class="bold-line pt-5"></div>
 
         <!-- Art Section -->
-        <section class="container-fluid section-5" id="art">
+        <section class="container-fluid" id="art">
             <!-- Art Section Heading -->
             <div class="col text-center mt-5">
-                <div class="contact-heading">
+                <div class="display-1 fw-bold">
                     Art
                 </div>
             </div>
@@ -169,13 +170,13 @@
         </section>
 
         <!-- Divider -->
-        <div class="bold-line" style="margin-bottom: -4em;"></div>
+        <div class="bold-line pt-5"></div>
 
         <!-- Music Section -->
-        <section class="container-fluid section-5 col-md-12 col-lg-11" id="music">
+        <section class="container-fluid col-md-12 col-lg-11 pb-5" id="music" aria-labelledby="music-header">
             <!-- Music Section Heading-->
             <div class="col text-center mt-5 mb-5">
-                <div class="contact-heading">
+                <div class="display-1 fw-bold" id="music-header">
                     Music
                 </div>
             </div>
@@ -183,20 +184,20 @@
                 <!-- Spotify Embed -->
                 <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/artist/2qw9c4KU6uqD4axXDq96jO?utm_source=generator&theme=0"
-                    width="100%" height="500" frameBorder="0"
+                    width="100%" height="500" frameBorder="0" title="Spotify - underscore_"
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"></iframe>
             </div>
         </section>
 
-        <!-- SECTION NO 7 -->
-        <section class="container-fluid section-7">
-            <div class="row section-7-inner mx-auto text-center">
+        <!-- Social Section -->
+        <section class="container-fluid socials-section" id="socials" aria-label="My Socials">
+            <div class="row socials-section-inner mx-auto text-center">
                 <div class="col">
-                    <div class="section-7-text">
+                    <div class="fs-4">
                         Stay in the loop! Please follow me on social media so we can keep in touch.
                     </div>
-                    <div class="section-7-icons">
+                    <div class="fs-1 pt-4">
                         <a href="https://www.linkedin.com/in/corbin-whitton/" rel="external" class="social-icons"
                             aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://stackoverflow.com/users/11412642/undying-soul" rel="external"
@@ -206,8 +207,8 @@
                             aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
                         <a href="https://github.com/UndyingSoul" rel="external" class="social-icons"
                             aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://cal.com/cwhitton" rel="external" class="social-icons"
-                            aria-label="My Calendar"><i class="fa-solid fa-calendar-days"></i></a>
+                        <a href="https://cal.com/cwhitton" rel="external" class="social-icons" aria-label="Calendar"><i
+                                class="fa-solid fa-calendar-days"></i></a>
                         <a href="https://dot.cards/corbin_whitton" rel="external" class="social-icons"
                             aria-label="Digital Business Card"><i class="fa-solid fa-id-card"></i></a>
                         <a href="https://instagram.com/that.one.guy.corbin" rel="external" class="social-icons"
@@ -286,4 +287,5 @@
     </main>
 </body>
 <script src="js/skills.js"></script>
+
 </html>

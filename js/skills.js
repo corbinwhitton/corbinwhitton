@@ -73,16 +73,6 @@ $(document).ready(async function () {
     addArtList();
 });
 
-let modalOptions = {
-    focus: false
-}
-var imageModal = new bootstrap.Modal(document.getElementById('image-modal'), modalOptions);
-
 function addModalToClick(event) {
     $('#imagepreview').attr('src', event.srcElement.parentElement.parentElement.parentElement.children[0].src.replace(/(\.[\w\d_-]+)$/i, '-lg$1')); // here asign the image to the modal when the user click the enlarge link
-    imageModal.show(); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
 };
-
-function destroyModal() {
-    imageModal.dispose;
-}
