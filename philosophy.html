@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the intricate fusion of code and contemplation on my personal philosophy page. As a passionate software engineer, I delve into the realms of thought and technology, sharing insights on life, logic, leadership, and lines of code. Join me on this journey of synthesizing ideas and algorithms.">
     <!-- Site Info -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Corbin Whitton | Philosophy</title>
@@ -27,9 +29,10 @@
     <!-- Preload JavaScript -->
     <link rel="preconnect preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script"
         async crossorigin="anonymous">
-    <link rel="preconnect preload"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" async crossorigin="anonymous">
-    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async crossorigin="anonymous">
+    <link rel="preconnect preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        as="script" async crossorigin="anonymous">
+    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async
+        crossorigin="anonymous">
     <link rel="preconnect preload" href="/js/nav.js" as="script" async>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -53,15 +56,18 @@
         <a id="nav-logo" class="navbar-brand" href="/">Corbin Whitton</a>
 
         <!-- Button collapsable -->
-        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+            aria-expanded="false" aria-haspopup="true" aria-controls="collapse" aria-label="Navbar">
             <span class="navbar-btn" onclick="navbarHamburgerChanger(this)">
                 <div class="navbar-btn-bar1"></div>
                 <div class="navbar-btn-bar2"></div>
                 <div class="navbar-btn-bar3"></div>
             </span>
         </button>
+
         <!-- Links -->
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" role="navigation"
+            aria-label="Main">
             <ul id="nav-ul" class="navbar-nav">
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="/">Home</a>
@@ -84,7 +90,7 @@
 
     <main class="container-fluid main p-0" id="home">
         <!-- Philosophy Page Heading -->
-        <section class="container-fluid section-5 text-center"><br><br>
+        <section class="container-fluid text-center pt-5"><br><br>
             <div class="primary-heading">
                 Personal <span class="fw-bold primary-heading-bold">Philosophy</span>
             </div>
@@ -784,33 +790,33 @@
         <div class="bold-line"></div>
 
         <!-- Most Influential Books Section -->
-        <section class="container-fluid section-6" id="influential-books">
+        <section class="container-fluid section-6" id="influential-books" aria-labelledby="influential-books-header">
             <!-- Most Influential Books Section Heading -->
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="contact-heading mb-5">
+                    <div class="display-1 fw-bold mb-5" id="influential-books-header">
                         Most Influential Books
                     </div>
                 </div>
             </div>
             <!-- How to Win Friends and Influence People, Dale Carnegie -->
-            <div class="row section-6-inner mx-auto">
+            <div class="row projects-section-inner mx-auto" aria-labelledby="book-name-htwfaip">
                 <!-- How to Win Friends and Influence People, Dale Carnegie Review -->
                 <div class="col-lg-9 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
+                    <div class="fs-1" id="book-name-htwfaip">
                         <div class="fs-4">How to Win Friends and Influence People</div>
                         <div class="fw-bold">Dale Carnegie</div>
                     </div>
-                    <div class="section-6-para">
+                    <div class="fs-6">
                         Dale Carnegie's 'How to Win Friends and Influence People' is a timeless guide that every
                         software engineer should have on their shelf. Its practical wisdom on effective communication,
                         collaboration, and leadership transcends code and algorithms, offering invaluable insights for
                         navigating the intricate human dynamics of the tech world.
                     </div>
-                    <div class="section-6-button">
+                    <div class="pt-4">
                         <a class="btn-secondary text-uppercase fw-bold"
-                            href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034/"
-                            rel="external"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
+                            href="https://www.amazon.com/How-Win-Friends-Influence-People/dp/0671027034/" rel="external"
+                            role="link"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
                     </div>
                 </div>
                 <!-- How to Win Friends and Influence People, Dale Carnegie Book Cover -->
@@ -819,8 +825,8 @@
                         <div class="book">
                             <div class="front">
                                 <div class="cover">
-                                    <img
-                                        src="/images/philosophy/books/howtowinfriendsandinfluencepeople_dalecarnegie.jpg" loading="lazy">
+                                    <img src="/images/philosophy/books/howtowinfriendsandinfluencepeople_dalecarnegie.jpg"
+                                        loading="lazy">
                                 </div>
                             </div>
                             <div class="left-side justify-content-end">
@@ -835,14 +841,14 @@
             </div>
 
             <!-- The 4 Disciplines of Execution, McChesney & Covey -->
-            <div class="row section-6-inner mx-auto mt-5">
+            <div class="row projects-section-inner mx-auto mt-5" aria-labelledby="book-name-4dx">
                 <!-- The 4 Disciplines of Execution, McChesney & Covey Review -->
                 <div class="col-lg-9 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
+                    <div class="fs-1" id="book-name-4dx">
                         <div class="fs-4">The 4 Disciplines of Execution</div>
                         <div class="fw-bold">McChesney & Covey</div>
                     </div>
-                    <div class="section-6-para">
+                    <div class="fs-6">
                         The 4 Disciplines of Execution" by McChesney & Covey is an indispensable read for software
                         engineers seeking to transform their project management approach. This book provides a practical
                         roadmap to translate strategic goals into actionable steps, fostering a laser-focused execution
@@ -850,10 +856,10 @@
                         and a culture of accountability, it equips software teams to deliver impactful results amidst
                         the complexities of software development.
                     </div>
-                    <div class="section-6-button">
+                    <div class="pt-4">
                         <a class="btn-secondary text-uppercase fw-bold"
                             href="https://www.amazon.com/Disciplines-Execution-Achieving-Wildly-Important/dp/145162705X"
-                            rel="external"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
+                            rel="external" role="link"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
                     </div>
                 </div>
                 <!-- The 4 Disciplines of Execution, McChesney & Covey Book Cover -->
@@ -877,14 +883,14 @@
             </div>
 
             <!-- Multipliers: How the Best Leaders Make Everyone Smarter, Liz Wiseman -->
-            <div class="row section-6-inner mx-auto mt-5">
+            <div class="row projects-section-inner mx-auto mt-5" aria-labelledby="book-name-mult">
                 <!-- Multipliers: How the Best Leaders Make Everyone Smarter, Liz Wiseman Review -->
                 <div class="col-lg-9 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
+                    <div class="fs-1" id="book-name-mult">
                         <div class="fs-4">Multipliers: How the Best Leaders Make Everyone Smarter</div>
                         <div class="fw-bold">Liz Wiseman</div>
                     </div>
-                    <div class="section-6-para">
+                    <div class="fs-6">
                         Liz Wiseman's 'Multipliers: How the Best Leaders Make Everyone Smarter' is an eye-opening
                         exploration of leadership dynamics that resonates deeply with my role as a leader. The book's
                         profound insights into unleashing the full potential of a team by amplifying their talents,
@@ -893,10 +899,10 @@
                         framework to elevate team productivity and engagement, making this book an essential guide for
                         any leader striving to create an environment of sustained excellence.
                     </div>
-                    <div class="section-6-button">
+                    <div class="pt-4">
                         <a class="btn-secondary text-uppercase fw-bold"
                             href="https://www.amazon.com/Multipliers-Best-Leaders-Everyone-Smarter/dp/0061964395"
-                            rel="external"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
+                            rel="external" role="link"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
                     </div>
                 </div>
                 <!-- Multipliers: How the Best Leaders Make Everyone Smarter, Liz Wiseman Book Cover -->
@@ -920,14 +926,14 @@
             </div>
 
             <!-- Extreme Ownership: How U.S. Navy SEALs Lead and Win, Willink & Babin -->
-            <div class="row section-6-inner mx-auto mt-5">
+            <div class="row projects-section-inner mx-auto mt-5" aria-labelledby="book-name-eo">
                 <!-- Extreme Ownership: How U.S. Navy SEALs Lead and Win, Willink & Babin Review -->
                 <div class="col-lg-9 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
+                    <div class="fs-1" id="book-name-eo">
                         <div class="fs-4">Extreme Ownership: How U.S. Navy SEALs Lead and Win</div>
                         <div class="fw-bold">Willink & Babin</div>
                     </div>
-                    <div class="section-6-para">
+                    <div class="fs-6">
                         Extreme Ownership: How U.S. Navy SEALs Lead and Win" is an exceptional leadership manual that
                         resonates profoundly with my leadership philosophy. Jocko Willink and Leif Babin's riveting
                         account of their experiences as Navy SEALs underscores the critical importance of
@@ -936,10 +942,10 @@
                         that have transformed my approach to leadership, both in the software engineering realm and
                         beyond.
                     </div>
-                    <div class="section-6-button">
+                    <div class="pt-4">
                         <a class="btn-secondary text-uppercase fw-bold"
-                            href="https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs/dp/1250067057"
-                            rel="external"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
+                            href="https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs/dp/1250067057" rel="external"
+                            role="link"><i class="fa-brands fa-amazon"></i> Get it on Amazon</a>
                     </div>
                 </div>
                 <!-- Extreme Ownership: How U.S. Navy SEALs Lead and Win, Willink & Babin Book Cover -->
@@ -996,13 +1002,13 @@
 
 
         <!-- Social Section -->
-        <section class="container-fluid section-7" id="socials">
-            <div class="row section-7-inner mx-auto text-center">
+        <section class="container-fluid socials-section" id="socials" aria-label="My Socials">
+            <div class="row socials-section-inner mx-auto text-center">
                 <div class="col">
-                    <div class="section-7-text">
+                    <div class="fs-4">
                         Stay in the loop! Please follow me on social media so we can keep in touch.
                     </div>
-                    <div class="section-7-icons">
+                    <div class="fs-1 pt-4">
                         <a href="https://www.linkedin.com/in/corbin-whitton/" rel="external" class="social-icons"
                             aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://stackoverflow.com/users/11412642/undying-soul" rel="external"
@@ -1012,8 +1018,8 @@
                             aria-label="GitLab"><i class="fa-brands fa-gitlab"></i></a>
                         <a href="https://github.com/UndyingSoul" rel="external" class="social-icons"
                             aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://cal.com/cwhitton" rel="external" class="social-icons"
-                            aria-label="My Calendar"><i class="fa-solid fa-calendar-days"></i></a>
+                        <a href="https://cal.com/cwhitton" rel="external" class="social-icons" aria-label="Calendar"><i
+                                class="fa-solid fa-calendar-days"></i></a>
                         <a href="https://dot.cards/corbin_whitton" rel="external" class="social-icons"
                             aria-label="Digital Business Card"><i class="fa-solid fa-id-card"></i></a>
                         <a href="https://instagram.com/that.one.guy.corbin" rel="external" class="social-icons"

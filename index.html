@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore innovative solutions and expertly crafted software projects in my software engineering portfolio. With a passion for cutting-edge technologies, I showcase my proficiency in developing robust applications and solving complex challenges. Discover how my skills can elevate your projects. Let's collaborate and bring your software ideas to life.">
     <!-- Site Info -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Corbin Whitton | Portfolio</title>
@@ -26,9 +28,10 @@
     <!-- Preload JavaScript -->
     <link rel="preconnect preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script"
         async crossorigin="anonymous">
-    <link rel="preconnect preload"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" async crossorigin="anonymous">
-    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async crossorigin="anonymous">
+    <link rel="preconnect preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        as="script" async crossorigin="anonymous">
+    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async
+        crossorigin="anonymous">
     <link rel="preconnect preload" href="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js" as="script" async
         crossorigin="anonymous">
     <link rel="preconnect preload" href="/js/nav.js" as="script" async>
@@ -59,7 +62,7 @@
         <a id="nav-logo" class="navbar-brand" href="/">Corbin Whitton</a>
 
         <!-- Button collapsable -->
-        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <button class="navbar-toggler" id="nav-btn" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="false" aria-haspopup="true" aria-controls="collapse" aria-label="Navbar">
             <span class="navbar-btn" onclick="navbarHamburgerChanger(this)">
                 <div class="navbar-btn-bar1"></div>
                 <div class="navbar-btn-bar2"></div>
@@ -68,7 +71,7 @@
         </button>
 
         <!-- Links -->
-        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar" role="navigation" aria-label="Main">
             <ul id="nav-ul" class="navbar-nav">
                 <li class="nav-item navigation-list">
                     <a class="nav-link nav-custom-link" href="#">Home</a>
@@ -89,12 +92,12 @@
         </div>
     </nav>
 
-    <main class="container-fluid main p-0" id="home">
+    <main class="container-fluid main p-0" id="home" role="main">
         <!-- Portrait Section -->
-        <section class="container-fluid section-1">
-            <div class="row section-1-inner">
-                <div class="col section-1-inner-col">
-                    <div class="image-frame mx-auto my-5" aria-label="Portrait of Corbin Whitton">
+        <section class="container-fluid portrait-section">
+            <div class="row portrait-section-inner">
+                <div class="col portrait-section-inner-col">
+                    <div class="image-frame mx-auto my-5" role="img" aria-label="Portrait of Corbin Whitton">
                     </div>
                 </div>
             </div>
@@ -102,14 +105,14 @@
 
 
         <!-- About Me Section -->
-        <section id="about-me" class="container-fluid section-2">
+        <section id="about-me" class="container-fluid about-section">
             <div class="row">
                 <div class="col text-center">
                     <div class="primary-heading">
                         <!-- About Me Main Heading -->
                         About <span class="fw-bold primary-heading-bold">Corbin Whitton</span>
                     </div>
-                    <h1 class="paragraph mx-auto mt-2" style="font-weight: normal;">
+                    <h1 class="paragraph mx-auto mt-2 fw-normal">
                         <!-- About Me Blurb -->
                         DevOps Engineer | Full-Stack Software Engineer | Computer Scientist | IT Professional<br>
                         I design, implement, and support solutions designed with non-profits in mind. I utilize
@@ -124,10 +127,10 @@
 
 
         <!-- What I do section -->
-        <section class="container-fluid section-3" id="what-I-do">
-            <div class="row section-3-inner">
-                <div class="col-lg-6 section-3-inner-col-left text-center">
-                    <div class="primary-heading section-3-heading text-lg-end">
+        <section class="container-fluid what-I-do-section" id="what-I-do" aria-label="What I do">
+            <div class="row what-I-do-section-inner">
+                <div class="col-lg-6 what-I-do-section-inner-col-left text-center">
+                    <div class="display-3 text-lg-end">
                         <!-- Typewriter text -->
                         I am <span id="typewriter-title" class="fw-bold"></span>
                         <script>
@@ -166,19 +169,19 @@
                                 .start();
                         </script>
                     </div>
-                    <div class="section-3-image-left text-lg-end">
+                    <div class="what-I-do-section-image-left text-lg-end">
                         <img src="./images/laptopondesk.jpg" class="img-fluid sec3-images sec3-img-left" alt=""
                             loading="lazy">
                     </div>
                 </div>
-                <div class="col-lg-6 section-3-inner-col-right text-center mt-5 mt-lg-0">
-                    <div class="section-3-image-right text-lg-start">
+                <div class="col-lg-6 what-I-do-section-inner-col-right text-center mt-5 mt-lg-0">
+                    <div class="what-I-do-section-image-right text-lg-start">
                         <img src="./images/soundconsole.jpg" class="img-fluid sec3-images sec3-img-right" alt=""
                             loading="lazy">
                     </div>
                     <!-- Check out what I do link button -->
-                    <div class="section-3-button-right text-lg-start">
-                        <a class="btn-secondary text-uppercase fw-bold" href="skills.html">
+                    <div class="what-I-do-section-button-right text-lg-start">
+                        <a class="btn-secondary text-uppercase fw-bold" href="skills.html" role="link">
                             Check Out What I Do
                         </a>
                     </div>
@@ -189,7 +192,7 @@
 
 
         <!-- Personal Philosophy Section -->
-        <section class="container-fluid section-4" id="personal-philosophy">
+        <section class="container-fluid pt-5 mt-5 mb-5" id="personal-philosophy" aria-label="Personal Philosophy">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-4-left text-center text-lg-end pe-0 pe-lg-5">
@@ -201,9 +204,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="section-4-right text-center text-lg-start">
-                        <div class="sec4-blank"></div>
                         <!-- Personal Philosophy Blurb -->
-                        <div class="sec4-text">
+                        <div class="fs-5 mt-5">
                             Learning from failed experiments and experiences is a huge part of being an engineer. It is
                             through failure that our theories are tested and knowledge is obtained.
                             Obtaining knowledge is only half the battle; if we don't change our methods and processes
@@ -213,19 +215,21 @@
                             proposed, and through the fires of failure and growth, a proposal can become a great
                             solution.<br><br> Never be afraid of failure, be afraid of not changing.
                         </div>
-                        <div class="section-4-button">
-                            <a class="btn-secondary text-uppercase fw-bold" href="philosophy.html">Personal
-                                Philosophy</a>
+                        <div class="section-4-button pt-5">
+                            <a class="btn-secondary text-uppercase fw-bold" href="philosophy.html" role="link">Personal Philosophy</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Divider -->
+        <div class="bold-line mb-5 pt-3"></div>
+
         <!-- Experiences Timeline Section -->
-        <section id="experiences">
+        <section id="experiences" aria-labelledby="experiences-heading">
             <div class="col text-center">
-                <div class="contact-heading">
+                <div class="display-1 fw-bold" id="experiences-heading">
                     Experiences
                 </div>
             </div>
@@ -310,22 +314,22 @@
             <!-- See All Experiences Button -> LinkedIn -->
             <div class="text-center">
                 <a class="btn-secondary text-uppercase fw-bold"
-                    href="https://www.linkedin.com/in/corbin-whitton/details/experience/" rel="external">See All
+                    href="https://www.linkedin.com/in/corbin-whitton/details/experience/" rel="external" role="link">See All
                     Experiences</a>
             </div>
         </section>
 
         <!-- Divider -->
-        <div class="bold-line mt-5"></div>
+        <div class="bold-line pt-5"></div>
 
         <!-- My Projects Section -->
-        <section class="container-fluid section-6" id="projects">
+        <section class="container-fluid p-4" id="projects">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="contact-heading">
+                    <div class="display-1 fw-bold">
                         My Projects
                     </div>
-                    <div class="contact-para">
+                    <div class="fs-4 lead">
                         Check out my work
                     </div>
                     <br><br>
@@ -333,33 +337,33 @@
             </div>
 
             <!-- Westech Website Project -->
-            <div class="row section-6-inner mx-auto">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
+            <div class="row projects-section-inner mx-auto">
+                <div class="col-lg-6 sec-6-left pe-0 pe-lg-4">
+                    <div class="fs-1">
                         <span class="fw-bold">Westech Equipment</span> Website
                     </div>
-                    <div class="section-6-para">
+                    <div class="fs-6">
                         Used my experience in DevOps to create coding pipelines to automate deploys and testing. I also
                         created numerous scripts and routines that would allow employees to fetch latest product
                         information from manufacturers, allowing for greater productivity.
                     </div>
-                    <div class="section-6-button">
+                    <div class="mt-5">
                         <a class="btn-simple text-uppercase fw-bold" href="https://westechequipment.com"
-                            rel="external">View Project</a>
+                            rel="external" role="link">View Project</a>
                     </div>
                 </div>
-                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block"><img
-                        src="/images/projects/westech.jpeg" class="img-fluid sec6-image" alt="" loading="lazy">
+                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block zoom-on-hover"><img
+                        src="/images/projects/westech.jpeg" class="img-fluid rounded shadow" alt="Westech Equipment eCommerce Website" loading="lazy">
                 </div>
             </div>
 
             <!-- Whistic Integrations Project -->
-            <div class="row section-6-inner mx-auto mt-5">
+            <div class="row projects-section-inner mx-auto mt-5">
                 <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
+                    <div class="fs-1">
                         <span class="fw-bold">Whistic</span> Integrations
                     </div>
-                    <div class="section-6-para">
+                    <div class="fs-6">
                         Worked alongside the Whistic integrations team to break out code from our monolithic
                         architecture to a microservice architecture, allowing for more rapid development and
                         deployments. Integrated the Whistic platform with Salesforce, Slack, Webhooks, the Whistic
@@ -368,32 +372,35 @@
                         my experience in IT and DevOps, I created numerous dashboards and log queries to quickly find
                         problems, increasing team accountability, and productivity.
                     </div>
-                    <div class="section-6-button">
-                        <a class="btn-simple text-uppercase fw-bold" href="https://whistic.com" rel="external">View
+                    <div class="mt-5">
+                        <a class="btn-simple text-uppercase fw-bold" href="https://whistic.com" rel="external" role="link">View
                             Project</a>
                     </div>
                 </div>
-                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block"><img
-                        src="/images/projects/whistic.jpeg" class="img-fluid sec6-image" alt="" loading="lazy">
+                <div class="col-lg-6 sec-6-right mt-lg-0 mt-5 d-none d-lg-block zoom-on-hover"><img
+                        src="/images/projects/whistic.jpeg" class="img-fluid rounded shadow" alt="Whistic Inc. Main Website" loading="lazy">
                 </div>
             </div>
 
             <!-- See All Projects Button -->
             <div class="row mt-5">
-                <div class="section-6-button-see-all text-center">
-                    <a class="btn-secondary text-uppercase fw-bold" href="projects.html">See All Projects</a>
+                <div class="text-center">
+                    <a class="btn-secondary text-uppercase fw-bold" href="projects.html" role="link">See All Projects</a>
                 </div>
             </div>
         </section>
 
+        <!-- Divider -->
+        <div class="bold-line"></div>
+
         <!-- Contact Section -->
-        <section id="contact" class="container-fluid section-contact">
+        <section id="contact" class="container-fluid section-contact" aria-labelledby="contact-heading">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="contact-heading">
+                    <div id="contact-heading" class="display-1 fw-bold">
                         Contact Me
                     </div>
-                    <div class="contact-para">
+                    <div class="fs-4 lead">
                         Let's start a conversation
                     </div>
                 </div>
@@ -401,54 +408,56 @@
             <div class="row card-row-2">
                 <div class="contact-form-div">
                     <!-- Contact Form -->
-                    <form action="https://formspree.io/f/xqkojodb" method="POST"
+                    <form action="https://formspree.io/f/xqkojodb" method="POST" id="contact-form"
                         class="contact-form col-lg-10 ms-auto me-auto">
                         <!-- Contact Form Name Field -->
                         <div class="form-group mt-3 mt-sm-4">
                             <input type="text" id="contact-name" name="Name" class="form-control"
-                                placeholder="Your Name">
+                                placeholder="Your Name" aria-label="Your Name">
                         </div>
 
                         <!-- Contact Form Email Field -->
                         <div class="form-group mt-3 mt-sm-4">
                             <input type="text" id="contact-email" name="Email" class="form-control"
-                                placeholder="Your Email">
+                                placeholder="Your Email" aria-label="Your Email">
                         </div>
 
                         <!-- Contact Form Subject Field -->
                         <div class="form-group mt-3 mt-sm-4">
                             <input type="text" id="contact-subject" name="Subject" class="form-control"
-                                placeholder="Subject">
+                                placeholder="Subject" aria-label="Message Subject">
                         </div>
 
                         <!-- Contact Form Message Field -->
                         <div class="form-group mt-3 mt-sm-4">
                             <textarea id="contact-message" name="Message" cols="30" rows="7" class="form-control"
-                                placeholder="Message"></textarea>
+                                placeholder="Message" aria-label="Message"></textarea>
                         </div>
+
                         <div class="form-group mt-3 mt-sm-4 form-button">
                             <!-- Contact Form Submission Button -->
                             <input class="btn-primary text-uppercase fw-bold" type="submit" value="Send Message"
-                                id="contact-button">
-
+                            id="contact-button" aria-label="Send">
+                            
                             <!-- Book Me Button -->
                             <button type="button" class="btn-primary text-uppercase fw-bold"
-                                data-cal-link="cwhitton/professional" data-cal-config='{"layout":"month_view"}'>Book
-                                Me</button>
+                            data-cal-link="cwhitton/professional" data-cal-config='{"layout":"month_view"}' aria-label="Book Me">Book
+                            Me</button>
                         </div>
+                        <div id="contact-status" style="margin-bottom: -1.5em;" class="text-center mt-3 mt-sm-4 d-none" aria-label="Status"></div>
                     </form>
                 </div>
             </div>
         </section>
 
         <!-- Social Section -->
-        <section class="container-fluid section-7" id="socials">
-            <div class="row section-7-inner mx-auto text-center">
+        <section class="container-fluid socials-section" id="socials" aria-label="My Socials">
+            <div class="row socials-section-inner mx-auto text-center">
                 <div class="col">
-                    <div class="section-7-text">
+                    <div class="fs-4">
                         Stay in the loop! Please follow me on social media so we can keep in touch.
                     </div>
-                    <div class="section-7-icons">
+                    <div class="fs-1 pt-4">
                         <a href="https://www.linkedin.com/in/corbin-whitton/" rel="external" class="social-icons"
                             aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://stackoverflow.com/users/11412642/undying-soul" rel="external"
@@ -459,7 +468,7 @@
                         <a href="https://github.com/UndyingSoul" rel="external" class="social-icons"
                             aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                         <a href="https://cal.com/cwhitton" rel="external" class="social-icons"
-                            aria-label="My Calendar"><i class="fa-solid fa-calendar-days"></i></a>
+                            aria-label="Calendar"><i class="fa-solid fa-calendar-days"></i></a>
                         <a href="https://dot.cards/corbin_whitton" rel="external" class="social-icons"
                             aria-label="Digital Business Card"><i class="fa-solid fa-id-card"></i></a>
                         <a href="https://instagram.com/that.one.guy.corbin" rel="external" class="social-icons"
@@ -470,7 +479,7 @@
         </section>
 
         <!-- Footer Section -->
-        <footer class="container-fluid footer">
+        <footer class="container-fluid footer" aria-label="Footer">
             <!-- <div class="row section-footer-inner mx-auto">
                 <div class="col-sm-4">
                     <div class="footer-headline">
@@ -537,5 +546,5 @@
         </footer>
     </main>
 </body>
-
+<script src="/js/contact.js"></script>
 </html>

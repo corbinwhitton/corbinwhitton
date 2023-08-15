@@ -15,6 +15,7 @@ $(document).on("scroll", function () {
 
 function navbarHamburgerChanger(x) {
   x.classList.toggle("navbar-hamburger-active");
+  x.ariaExpanded = !x.ariaExpanded;
 }
 
 function openInNewWindow(url) {
@@ -34,4 +35,5 @@ $(document).ready(function() {
     openInNewWindow(this.href);
     return false;
   })
+  $('#collapsibleNavbar').ariaHidden = $('#nav-btn').ariaExpanded;
 })
