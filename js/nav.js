@@ -4,12 +4,14 @@ $(document).on("scroll", function () {
     $("#nav-logo").addClass("color-white");
     $(".nav-custom-link").addClass("color-white");
     $(".navbar-btn").addClass("navbar-btn-white");
+    $("html").css("background-color", "var(--footer-background-color)")
   }
   else {
     $("#navbar").removeClass("sticky");
     $("#nav-logo").removeClass("color-white");
     $(".nav-custom-link").removeClass("color-white");
     $(".navbar-btn").removeClass("navbar-btn-white");
+    $("html").css("background-color", "var(--primary-background-color)")
   }
 });
 

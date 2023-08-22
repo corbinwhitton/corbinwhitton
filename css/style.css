@@ -44,7 +44,7 @@
     --portrait-background-color: #8b8b8b;
     --card-background-color: #ffffff;
     --card-text-color: #000000;
-    --blockquote-footer-color: #4a4949; 
+    --blockquote-footer-color: #4a4949;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -93,10 +93,14 @@
         --portrait-background-color: #7c7474;
         --card-background-color: #454545;
         --card-text-color: #ffffff;
-        --blockquote-footer-color: #cdcdcd; 
+        --blockquote-footer-color: #cdcdcd;
     }
 }
 /* NAVBAR */
+
+html {
+    background-color: var(--primary-background-color);
+}
 
 #navbar {
     font-family: Roboto, sans-serif;
