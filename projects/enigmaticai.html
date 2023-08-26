@@ -1,0 +1,175 @@
+<html>
+<script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+<link rel="preconnect preload"
+    href="https://fonts.gstatic.com/s/robotoslab/v25/BngMUXZYTXPIvIBgJJSb6ufN5qWr4xCC.woff2" as="font"
+    type="font/woff2" async crossorigin="anonymous">
+
+<head>
+    <style>
+        .logo {
+            position: fixed;
+            top: 0; 
+            left: 0;
+            transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+            z-index: 10001;
+        }
+        .logo h1 {
+            font-family: Roboto, sans-serif;
+            transform: rotate(-45deg);
+            text-shadow: 0 1px 0 #7EA0b7, 0 2px 0 #7EA0b7, 0 3px 0 #7EA0b7, 0 4px 0 #7EA0b7, 0 5px 0 #7EA0b7, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+            color: #9faac4;
+            font-size: 10em;
+        }
+        .frostedGlass {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Adjust the opacity as needed */
+            backdrop-filter: blur(50px);
+            /* Adjust the blur amount as needed */
+            z-index: 1000;
+            /* Ensure it's on top of other content */
+
+            /* You can also add additional styling like borders or box-shadow if desired */
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            background: #141301;
+            padding: 0;
+            margin: 0;
+        }
+
+        section {
+            display: relative;
+            text-align: center;
+        }
+
+
+        .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #000;
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <canvas id="stage"></canvas>
+        <div class="overlay"></div>
+        <div class="frostedGlass"></div>
+        <div class="logo"><h1>E</h1></div>
+    </section>
+
+</body>
+<script>
+    const stage = new createjs.Stage('stage'),
+        circles = [],
+        maxRadius = 50,
+        maxNumber = (window.innerWidth * window.innerHeight) / 2000;
+
+    init();
+
+    function init() {
+        createjs.Ticker.setInterval(44);
+        setCanvasSize();
+        window.addEventListener('resize', setCanvasSize);
+        createjs.Ticker.addEventListener('tick', handleTick);
+
+        for (let i = 0; i < maxNumber; i++) {
+            circles.push(new circle(stage));
+        }
+
+        stage.update();
+    }
+
+    function setCanvasSize() {
+        stage.canvas.width = window.innerWidth;
+        stage.canvas.height = window.innerHeight;
+    }
+
+    function handleTick() {
+        circles.forEach(cir => cir.move());
+        stage.update();
+    }
+
+    function circle(stg) {
+        let circle;
+        let coords = { x: 0, y: 0 };
+
+        // Add a new variable to store the fade in speed
+        let fadeInSpeed = 0.01;
+        let fadeOutSpeed = 0.01;
+
+        init();
+
+        function init() {
+            draw();
+        }
+
+        function draw() {
+            circle = new createjs.Shape();
+            circle.graphics.beginFill(getRandomColor()).drawCircle(0, 0, randomNumber(maxRadius));
+
+            circle.y = Math.random() * window.innerHeight;
+            circle.x = Math.random() * window.innerWidth;
+
+            // Set the initial alpha to zero
+            circle.alpha = 0;
+
+            coords = { x: randomNumber(2) ? -1 : 1, y: randomNumber(2) ? -1 : 1 };
+
+            stg.addChild(circle);
+        }
+
+        function move() {
+            let { clientHeight, clientWidth } = stg.canvas;
+
+            if (circle.x > clientWidth || circle.y > clientHeight || circle.x < 0 || circle.y < 0) {
+                //console.log('remove')
+
+                circle.alpha = circle.alpha - fadeOutSpeed;
+                if (circle.alpha < 0.2) {
+                    stg.removeChild(circle);
+                    draw();
+                }
+            } else {
+                circle.x += coords.x;
+                circle.y += coords.y;
+
+                // Increase the alpha by the fade in speed until it reaches the desired value
+                if (circle.alpha < 0.5) {
+                    circle.alpha += fadeInSpeed;
+                }
+            }
+        }
+
+        function randomNumber(max) {
+            return parseInt(Math.random() * max);
+        }
+
+        function getRandomColor() {
+            let letters = '0123456789ABCDEF';
+            let hex = '#602bc2';
+
+            return hex;
+        }
+
+        return {
+            circle,
+            move
+        };
+    }
+
+</script>
+
+</html>
