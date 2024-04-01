@@ -11,6 +11,7 @@
     <title>Corbin Whitton | Projects</title>
     <!-- Styles -->
     <link rel="preconnect preload stylesheet" href="/css/style.css" as="style" async>
+    <link rel="preconnect preload stylesheet" href="/css/projects.css" as="style" async>
     <link rel="stylesheet preconnect preload"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" as="style"
@@ -18,10 +19,12 @@
     <!-- Preload JavaScript -->
     <link rel="preconnect preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" as="script"
         async crossorigin="anonymous">
-    <link rel="preconnect preload"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" async crossorigin="anonymous">
-    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async crossorigin="anonymous">
+    <link rel="preconnect preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        as="script" async crossorigin="anonymous">
+    <link rel="preconnect preload" href="https://kit.fontawesome.com/67077bf8f9.js" as="script" async
+        crossorigin="anonymous">
     <link rel="preconnect preload" href="/js/nav.js" as="script" async>
+    <link rel="preconnect preload" href="/js/projects.js" as="script" async>
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha384-NXgwF8Kv9SSAr+jemKKcbvQsz+teULH/a5UNJvZc6kP47hZgl62M1vGnw6gHQhb1"
@@ -33,7 +36,9 @@
         async defer></script>
     <script src="js/nav.js" defer></script>
     <!-- Largest Contentful Paint -->
-    <link rel="preconnect preload" as="image" href="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1338&q=80" async>
+    <link rel="preconnect preload" as="image"
+        href="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1338&q=80"
+        async>
 </head>
 
 <body>
@@ -72,27 +77,84 @@
         </div>
     </nav>
 
-    <main class="container-fluid main p-0" id="home">
+    <main class="container-fluid main" id="home" role="main">
         <!-- SECTION NO 5 -->
-        <section id="portfolio" class="container-fluid section-5">
-            <div class="row">
-                <div class="col">
-                    <div class="section-5-text text-center mx-auto mt-5">
-                        // TODO
-                    </div>
-                    <p class="text-center">
-                        Pardon my dust, I'm still working on this section!
-                    </p>
-                    <div>
-                        <img style="opacity: 0.5;"
-                            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1338&q=80"
-                            width="100%">
-                    </div>
-                    <!-- <div class="section-5-icon text-center">
-                        <i class="bi bi-chevron-double-down sec5-icon"></i>
-                    </div> -->
-                </div>
+        <section id="projects" class="m-5 pt-5">
+            <h2>Professional Projects</h2>
+            <div class="filter-buttons portfolio-sorting">
+                <button class="btn-secondary" data-filter="all">All</button>
+                <button class="btn-secondary" data-filter="development">Development</button>
+                <button class="btn-secondary" data-filter="publications">Publications</button>
             </div>
+            <ul class="work-grid ps-n5 me-4">
+                <li data-category="development">
+                    <img src="images/projects/ldot.jpg" alt="Project 1: Local Development Orchestration Tool">
+                    <h3>LDOT</h3>
+                    <p>A Local Developemnt Orchestration tool written in Rust using JSON</p>
+                    <a class="btn-primary" href="#">Learn More</a>
+                </li>
+                <li data-category="development">
+                    <img src="images/projects/enigmatic-chat.png" alt="Project 2: Enigmatic Chat">
+                    <h3>Enigmatic Chat</h3>
+                    <p>A Shopify chat app utilizing LLM for more natural customer interraction</p>
+                    <a class="btn-primary" href="https://cast.otter.jetzt/">Learn More</a>
+                </li>
+                <li data-category="publications">
+                    <img src="images/projects/being-better-at-code-reviews.jpg" alt="Project 3: Being Better at Code Reviews">
+                    <h3>Be Better at Code Reviews</h3>
+                    <p>A step-by-step guide on how to improve your code reviews</p>
+                    <a class="btn-primary" href="https://www.linkedin.com/pulse/better-code-reviews-corbin-whitton/" rel="external" role="link">Learn More</a>
+                </li>
+                <li data-category="development">
+                    <img src="images/projects/westech.jpeg" alt="Project 4: Westech">
+                    <h3>Westech</h3>
+                    <p>Site maintenence and DevSecOps engineering</p>
+                    <a class="btn-primary" href="#">Learn More</a>
+                </li>
+                <li data-category="development">
+                    <img src="images/projects/wio.jpg" alt="Project 5: Web Image Optimizer">
+                    <h3>WIO</h3>
+                    <p>A command line Web Image Optimizer written in Python</p>
+                    <a class="btn-primary" href="#">Learn More</a>
+                </li>
+                <li data-category="development">
+                    <img src="images/projects/whistic.jpeg" alt="Project 6: Whistic">
+                    <h3>Whistic</h3>
+                    <p>Web development, and integration microservice development</p>
+                    <a class="btn-primary" href="#">Learn More</a>
+                </li>
+                <li data-category="development">
+                    <img src="images/projects/hello-world.jpg" alt="Project 7: Hello World Repository">
+                    <h3>Hello World Repo</h3>
+                    <p>A repository of hello world programs for every language I've come across.</p>
+                    <a class="btn-primary" href="#">Learn More</a>
+                </li>
+                <li data-category="development">
+                    <img src="images/projects/prefab-status.jpg" alt="Project 8: Prefab Status Manager">
+                    <h3>Prefab Status Manager</h3>
+                    <p>Internal application to track the progress for Electrical Prefabrication</p>
+                    <a class="btn-primary" href="#">Learn More</a>
+                </li>
+                <li data-category="development">
+                    <img src="images/projects/ottercast.jpg" alt="Project 9: OtterCast V2">
+                    <h3>OtterCast V2</h3>
+                    <p>A standalone device for audio streaming</p>
+                    <a class="btn-primary" href="https://cast.otter.jetzt/">Learn More</a>
+                </li>
+                <li data-category="publications">
+                    <img src="images/projects/using-docker-in-an-educational-environment.jpg" alt="Project 10: Using Docker In an Educational Environment">
+                    <h3>Undergraduate Thesis</h3>
+                    <p>Using Docker in an Educational Environment</p>
+                    <a class="btn-primary" href="https://nnu.whdl.org/en/browse/resources/13543" rel="external" role="link">Learn More</a>
+                </li>
+            </ul>
+
+            <!-- Divider -->
+            <div class="bold-line mb-5 pt-3"></div>
+            <!-- See All Experiences Button -> LinkedIn -->
+            <div class="text-center">
+                <a class="btn-secondary text-uppercase fw-bold"
+                    href="/interests.html">Personal Interests</a>
         </section>
 
 
@@ -192,5 +254,7 @@
         </footer>
     </main>
 </body>
+
+<script src="js/projects.js"></script>
 
 </html>

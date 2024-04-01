@@ -13,7 +13,16 @@ $(document).on("scroll", function () {
     $(".navbar-btn").removeClass("navbar-btn-white");
     $("html").css("background-color", "var(--primary-background-color)")
   }
+
+  if($(window).scrollTop() + $(window).height() == ($(document).height() - .5)) {
+    timesBottomReached++;
+    if (timesBottomReached >= 5) {
+
+    }
+  }
 });
+
+let timesBottomReached = 0;
 
 function navbarHamburgerChanger(x) {
   x.classList.toggle("navbar-hamburger-active");

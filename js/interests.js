@@ -5,7 +5,7 @@ async function fetchHtmlAsText(url) {
 
 async function addPhotographyList() {
     const contentDiv = document.getElementById("photography-list");
-    contentDiv.innerHTML = await fetchHtmlAsText("skills/photography.html");
+    contentDiv.innerHTML = await fetchHtmlAsText("interests/photography.html");
     var offset = 4;
     var minShown = 4 * offset;
     var items = document.getElementsByClassName('photography-list-image').length * offset;
@@ -38,7 +38,7 @@ async function addPhotographyList() {
 async function addArtList() {
     // Load the first 3 list items from another HTML file
     const contentDiv = document.getElementById("art-list");
-    contentDiv.innerHTML = await fetchHtmlAsText("skills/art.html");
+    contentDiv.innerHTML = await fetchHtmlAsText("interests/art.html");
     var offset = 4;
     var minShown = 4 * offset;
     var items = document.getElementsByClassName('art-list-image').length * offset;
